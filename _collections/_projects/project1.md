@@ -2,7 +2,6 @@
 title: "AI Solutions Architecture"
 date: 2024-01-01
 order: 1
-image: /assets/images/projects/ai-solutions.jpg
 tags: [AI, Cloud, Architecture]
 ---
 

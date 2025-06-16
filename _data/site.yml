@@ -1,22 +1,25 @@
-title: "Jennifer Andréoli-Fang, PhD"
-description: "Technology leader specializing in AI, machine learning, and cloud solutions"
-email: "web@nextjen.ai"
-linkedin: "https://www.linkedin.com/in/nextjen"
+name: Jennifer Andreoli-Fang, PhD
+title: Technology Leader & AI Enthusiast
+description: Technology leader specializing in AI, machine learning, and cloud solutions
+email: web@nextjen.ai
+linkedin: https://linkedin.com/in/jennifer-andreoli-fang
 
 social:
   - name: LinkedIn
-    url: https://www.linkedin.com/in/nextjen
+    url: https://linkedin.com/in/jennifer-andreoli-fang
     icon: fab fa-linkedin
   - name: Email
     url: mailto:web@nextjen.ai
     icon: fas fa-envelope
 
 navigation:
-  - title: Home
-    url: /
   - title: Bio
-    url: /bio
+    url: /bio/
+  - title: CV
+    url: /cv/
+  - title: Projects
+    url: /projects/
   - title: Publications
-    url: /publications
+    url: /publications/
   - title: AI Resources
-    url: /ai-resources 
+    url: /ai-resources/ 

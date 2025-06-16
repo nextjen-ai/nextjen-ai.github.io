@@ -1,6 +1,13 @@
 ---
 title: Current Role
-order: 1
+order: 2
 ---
 
-Dr. Jennifer Andreoli-Fang is a renowned technology leader with over 20 years of experience spearheading the development of innovative wireline, wireless, and cloud solutions. Currently, she heads the global wireline networks segment at Amazon Web Services (AWS), working with tier-1 operators on architecting broadband workload on AWS and go-to-market strategies. 
+As a Senior Manager of Solutions Architecture at Amazon Web Services (AWS), I lead a team focused on architecting and building AI solutions, including RAG and AI Agent technologies. I collaborate with global tier-1 operators to develop and execute go-to-market strategies that facilitate migration to AI-driven networks.
+
+Key responsibilities include:
+- Managing high-performing cloud architecture teams for tier-1 telecom customers
+- Leading the fixed network segment in AWS Telco business unit
+- Driving AI/ML initiatives and industry standards
+- Speaking at industry conferences and panels on AI and cloud technologies
+- Serving as SCTE AI/ML Group vice chair 
