@@ -1,0 +1,68 @@
+summary: |
+  PhD in machine learning for networks; pioneering leader in telecom networks and cloud; completed multiple DeepLearning.ai specializations; looking to lead a team to build products or solutions in AI/ML.
+
+highlights:
+  - Professional certificates in Deep Learning and AI. Experienced speaker on AI and GenAI.
+  - PhD dissertation in machine learning for wireless networks.
+  - 6+ years of building and directly managing high-performing teams.
+  - 15+ years of leading diverse teams, guiding both vendors and operators through the full product lifecycle with TAM size of 10s of Billions USD – from identifying market opportunities, to pioneering new technologies to delivering market-ready solutions that consistently surpassed customer expectations.
+  - Proven track record of building outstanding rapport with customer & partners.
+
+patents: "More than 110 patents granted and filed. The most prolific female inventor in the cable industry and top 5 overall. CableLabs Inventor of the Year in 2014 and 2017. Winner of multiple industry innovation awards."
+
+experience:
+  - company: "Amazon Web Services"
+    period: "2021 – present"
+    title: "Senior Manager, Solutions Architecture"
+    achievements:
+      - "Managing a team to architect and build AI solutions (RAG, AI Agent). Collaborated with global tier-1 operators to devise and execute go-to-market strategies that facilitate migration to AI-driven networks."
+      - "Built and leading high-performing cloud architecture teams dedicated to tier-1 telecom customers, including DISH and Charter Communications. Oversaw the architecting, testing, and deployment of DISH's 5G network on AWS, resulting in 20% nationwide coverage within 12 months of project initiation."
+      - "Created and leading the fixed network segment in AWS Telco business unit. Successfully identified and engaged key lighthouse customers and strategic vendor partners, facilitating their integration into AWS's AI and cloud ecosystem, resulting in significant market expansion and revenue growth."
+      - "Four invited industry AI panels and keynote presentations in 2024."
+      - "Society of Cable Telecommunication Engineers (SCTE) AI/ML Group vice chair."
+      - "Authored invited paper 'Building Generative AI Products' as a blueprint for the cable industry."
+
+  - company: "CableLabs"
+    period: "2007 – 2021"
+    title: "Distinguished Technologist, Principal Architect, Lead Architect, Senior Engineer"
+    achievements:
+      - "Spearheaded the evolution of DOCSIS technology through multiple iterations (3.0, 3.1, 4.0), managing a $10 billion Total Addressable Market with global deployment."
+      - "Co-invented a technology that enables the transmission of LTE signals over cable networks, offering an alternative to DOCSIS."
+      - "Led the innovation and development of Low Latency Xhaul (LLX) technology for 5G backhaul over DOCSIS."
+      - "Established industry-wide recognition as a technology leader in LTE/5G and Wi-Fi coexistence."
+
+  - company: "ViaSat"
+    period: "2004 – 2007"
+    title: "Senior Engineer"
+
+awards:
+  - "Invited and keynote speaker on AI and Cloud Technologies for WICT, 2024."
+  - "Invited AI Track keynote panel speaker at SCTE Expo, 2024."
+  - "SCTE Tech Expo Conference Committee member, editor of AI & Cloud tracks, 2020-present."
+  - "WICT Rocky Mountain Director of Leadership Programming, 2023."
+  - "Women in Cable Telecommunications (WICT) Rocky Mountain Woman in Technology, 2020."
+  - "Light Reading Hedy Lamarr Female Tech Pioneer of the Year, 2018."
+  - "Silver Stevies Award for the Innovative Woman in Technology, 2017."
+  - "CableLabs Inventor of the Year, 2014 and 2017."
+
+education:
+  - degree: "DeepLearning.ai Deep Learning Specialization"
+    details: "Neural Networks, Convolutional Neural Networks, Recurrent Neural Networks, Natural Language Processing, Transformers"
+    year: "August 2024"
+  - degree: "DeepLearning.ai Machine Learning Specialization"
+    year: "December 2023"
+  - degree: "AWS Solutions Architect Associate"
+    year: "December 2021"
+  - degree: "Telecom mini-MBA"
+    details: "by private industry"
+    year: "2020"
+  - degree: "Ph.D. in Electrical and Computer Engineering"
+    school: "University of California, San Diego"
+    year: "June 2005"
+  - degree: "B.S. in Electrical Engineering"
+    school: "California Institute of Technology"
+    year: "June 1998"
+
+contact:
+  email: "web@nextjen.ai"
+  linkedin: "https://linkedin.com/in/your-profile" 

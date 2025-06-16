@@ -4,13 +4,17 @@ title: Home
 ---
 
 <section class="hero">
-    <div class="hero-content">
-        <h1>Jennifer Andréoli-Fang, PhD</h1>
-        <p class="subtitle">Technology Leader | AI & Machine Learning Expert | Cloud Solutions Architect</p>
-        <div class="hero-buttons">
-            <a href="/bio" class="btn btn-primary">Learn More</a>
-            <a href="mailto:web@nextjen.ai" class="btn btn-secondary">Get in Touch</a>
-        </div>
+    <div class="hero-image">
+        <img src="/assets/images/profile.jpg" alt="Jennifer Andréoli-Fang" onerror="this.src='/assets/images/placeholder.jpg'">
+    </div>
+</section>
+
+<section class="hero-content">
+    <h1>Jennifer Andréoli-Fang, PhD</h1>
+    <p class="subtitle">Technology Leader | AI & Machine Learning Expert | Cloud Solutions Architect</p>
+    <div class="hero-buttons">
+        <a href="/bio" class="btn btn-primary">Learn More</a>
+        <a href="mailto:web@nextjen.ai" class="btn btn-secondary">Get in Touch</a>
     </div>
 </section>
 
@@ -45,27 +49,42 @@ title: Home
 
 <style>
 .hero {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: var(--white);
-    padding: 6rem 0;
-    text-align: center;
+    position: relative;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.hero-image {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .hero-content {
-    max-width: 800px;
-    margin: 0 auto;
+    text-align: center;
+    padding: 4rem 2rem;
+    background: var(--white);
 }
 
-.hero h1 {
-    font-size: 3.5rem;
+.hero-content h1 {
+    font-size: 3rem;
     margin-bottom: 1rem;
-    color: var(--white);
+    color: var(--primary-color);
+    font-weight: 300;
+    letter-spacing: -0.5px;
 }
 
 .subtitle {
     font-size: 1.5rem;
     margin-bottom: 2rem;
-    opacity: 0.9;
+    color: var(--text-color);
+    font-weight: 300;
+    letter-spacing: 0.5px;
 }
 
 .hero-buttons {

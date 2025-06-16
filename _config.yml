@@ -11,9 +11,15 @@ plugins:
 
 # Collections
 collections:
+  bio:
+    output: true
+    permalink: /bio/:title/
   publications:
     output: true
     permalink: /publications/:title/
+  projects:
+    output: true
+    permalink: /projects/:title/
 
 # Default front matter
 defaults:
@@ -22,6 +28,16 @@ defaults:
       type: "publications"
     values:
       layout: "publication"
+  - scope:
+      path: ""
+      type: "bio"
+    values:
+      layout: "bio_section"
+  - scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "project"
 
 # Exclude from processing
 exclude:
