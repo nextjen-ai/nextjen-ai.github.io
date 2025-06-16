@@ -1,0 +1,131 @@
+---
+layout: default
+title: Bio
+---
+
+<section class="bio-header">
+    <h1>Professional Biography</h1>
+</section>
+
+<section class="bio-content">
+    <div class="bio-section">
+        <h2>Current Role</h2>
+        <p>Dr. Jennifer Andreoli-Fang is a renowned technology leader with over 20 years of experience spearheading the development of innovative wireline, wireless, and cloud solutions. Currently, she heads the global wireline networks segment at Amazon Web Services (AWS), working with tier-1 operators on architecting broadband workload on AWS and go-to-market strategies.</p>
+    </div>
+
+    <div class="bio-section">
+        <h2>Previous Experience</h2>
+        <p>Prior to joining AWS, Dr. Andreoli-Fang was a Distinguished Technologist at CableLabs, where she played a crucial role in the development of DOCSIS 3.0/3.1/FDX MAC, mobile backhaul, and convergence. Her contributions to the 3GPP in the cable and wireless industries have been widely recognized.</p>
+    </div>
+
+    <div class="bio-section">
+        <h2>Achievements & Recognition</h2>
+        <ul class="achievements-list">
+            <li>Over 110 patents issued and pending, solidifying her position as the top female inventor in the cable industry</li>
+            <li>WICT Rocky Mountain Technology Woman award (2020)</li>
+            <li>Light Reading's Hedy Lamarr Female Tech Pioneer award (2018)</li>
+        </ul>
+    </div>
+
+    <div class="bio-section">
+        <h2>Industry Involvement</h2>
+        <p>Committed to advancing industry developments, Dr. Andreoli-Fang actively participates in various industry organizations:</p>
+        <ul class="involvement-list">
+            <li>SCTE Expo Program Committee</li>
+            <li>SCTE AI/ML Working Group (Vice Chair)</li>
+            <li>Board of Directors at WICT Rocky Mountain</li>
+        </ul>
+    </div>
+
+    <div class="bio-section">
+        <h2>Education</h2>
+        <ul class="education-list">
+            <li>
+                <strong>PhD in Electrical and Computer Engineering</strong>
+                <p>University of California, San Diego</p>
+                <p>Specialization: Machine Learning and Wireless Networks</p>
+            </li>
+            <li>
+                <strong>Bachelor of Science</strong>
+                <p>California Institute of Technology</p>
+            </li>
+        </ul>
+    </div>
+</section>
+
+<style>
+.bio-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: var(--white);
+    padding: 4rem 0;
+    text-align: center;
+}
+
+.bio-header h1 {
+    color: var(--white);
+    margin: 0;
+}
+
+.bio-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4rem 0;
+}
+
+.bio-section {
+    margin-bottom: 3rem;
+}
+
+.bio-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+}
+
+.achievements-list,
+.involvement-list,
+.education-list {
+    list-style: none;
+    padding: 0;
+}
+
+.achievements-list li,
+.involvement-list li {
+    margin-bottom: 1rem;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.achievements-list li:before,
+.involvement-list li:before {
+    content: "•";
+    color: var(--secondary-color);
+    position: absolute;
+    left: 0;
+}
+
+.education-list li {
+    margin-bottom: 2rem;
+}
+
+.education-list strong {
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.education-list p {
+    margin: 0.25rem 0;
+    color: var(--text-color);
+}
+
+@media (max-width: 768px) {
+    .bio-content {
+        padding: 2rem 1rem;
+    }
+    
+    .bio-header {
+        padding: 3rem 1rem;
+    }
+}
+</style> 

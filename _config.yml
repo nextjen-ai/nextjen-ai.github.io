@@ -1,0 +1,32 @@
+title: Jennifer Andréoli-Fang, PhD
+description: Technology leader specializing in AI, machine learning, and cloud solutions
+baseurl: ""
+url: "https://nextjen-ai.github.io"
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# Collections
+collections:
+  publications:
+    output: true
+    permalink: /publications/:title/
+
+# Default front matter
+defaults:
+  - scope:
+      path: ""
+      type: "publications"
+    values:
+      layout: "publication"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git/ 
