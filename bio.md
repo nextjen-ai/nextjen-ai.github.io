@@ -7,7 +7,7 @@ permalink: /bio/
 <div class="bio-page">
     <div class="bio-header">
         <h1>About Me</h1>
-        <p class="bio-subtitle">Technology Leader & AI Enthusiast</p>
+        <p class="bio-subtitle">Technology Leader & AI Builder</p>
     </div>
 
     <div class="bio-content">

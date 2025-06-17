@@ -20,6 +20,9 @@ collections:
   projects:
     output: true
     permalink: /projects/:title/
+  cv:
+    output: true
+    permalink: /cv/:title/
 
 # Default front matter
 defaults:
@@ -38,6 +41,11 @@ defaults:
       type: "projects"
     values:
       layout: "project"
+  - scope:
+      path: ""
+      type: "cv"
+    values:
+      layout: "cv_section"
 
 # Exclude from processing
 exclude:

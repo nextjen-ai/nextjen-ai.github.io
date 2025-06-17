@@ -11,7 +11,7 @@ title: Home
 
 <section class="hero-content">
     <h1>Jennifer Andréoli-Fang, PhD</h1>
-    <p class="subtitle">Technology Leader | AI & Machine Learning Expert | Cloud Solutions Architect</p>
+    <p class="subtitle">Technology Leader | AI & Machine Learning System Builder | Cloud Solutions Architect</p>
     <div class="hero-buttons">
         <a href="/bio" class="btn btn-primary">Learn More</a>
         <a href="mailto:web@nextjen.ai" class="btn btn-secondary">Get in Touch</a>
@@ -98,22 +98,26 @@ title: Home
     border-radius: 5px;
     font-weight: 600;
     transition: all 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
 }
 
 .btn-primary {
-    background-color: var(--white);
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: 2px solid var(--primary-color);
 }
 
 .btn-secondary {
-    background-color: transparent;
-    border: 2px solid var(--white);
+    background-color: var(--secondary-color);
     color: var(--white);
+    border: 2px solid var(--secondary-color);
 }
 
 .btn:hover {
     transform: translateY(-2px);
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    opacity: 0.9;
 }
 
 .intro {
