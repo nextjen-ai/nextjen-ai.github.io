@@ -1,7 +1,7 @@
 ---
 title: AI Solutions Architecture
 tags: [AI, Cloud, Architecture]
-order: 1
+order: 3
 image: /assets/images/ai-solutions.jpg
 ---
 

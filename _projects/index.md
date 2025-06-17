@@ -5,7 +5,7 @@ permalink: /projects/
 ---
 
 <section class="projects-header">
-    <h1>Featured Projects</h1>
+    <h1>Recent AI and GenAI Projects</h1>
 </section>
 
 <section class="projects-content">

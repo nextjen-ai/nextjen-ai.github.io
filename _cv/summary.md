@@ -3,12 +3,13 @@ title: Summary
 order: 1
 ---
 
-PhD in machine learning for networks; pioneering leader in telecom networks and cloud; completed multiple DeepLearning.ai specializations; looking to lead a team to build products or solutions in AI/ML.
+PhD in machine learning & networking; strategic leader in cloud, AI, and networks; completed multiple DeepLearning.ai specializations; hands-on builder of GenAI systems; looking to lead a team to build products in AI/ML.
 
 ### Highlights
+- UC San Diego PhD, Caltech BSEE
 - Professional certificates in Deep Learning and AI. Experienced speaker on AI and GenAI.
 - PhD dissertation in machine learning for wireless networks.
-- 6+ years of building and directly managing high-performing teams.
+- 7+ years of building and directly managing high-performing teams.
 - 15+ years of leading diverse teams, guiding both vendors and operators through the full product lifecycle with TAM size of 10s of Billions USD – from identifying market opportunities, to pioneering new technologies to delivering market-ready solutions that consistently surpassed customer expectations.
 - Proven track record of building outstanding rapport with customer & partners.
 
