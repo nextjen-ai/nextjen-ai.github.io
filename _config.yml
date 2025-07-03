@@ -11,18 +11,9 @@ plugins:
 
 # Collections
 collections:
-  bio:
-    output: true
-    permalink: /bio/:title/
   publications:
     output: true
     permalink: /publications/:title/
-  projects:
-    output: true
-    permalink: /projects/:title/
-  cv:
-    output: true
-    permalink: /cv/:title/
 
 # Default front matter
 defaults:
@@ -31,21 +22,6 @@ defaults:
       type: "publications"
     values:
       layout: "publication"
-  - scope:
-      path: ""
-      type: "bio"
-    values:
-      layout: "bio_section"
-  - scope:
-      path: ""
-      type: "projects"
-    values:
-      layout: "project"
-  - scope:
-      path: ""
-      type: "cv"
-    values:
-      layout: "cv_section"
 
 # Exclude from processing
 exclude:

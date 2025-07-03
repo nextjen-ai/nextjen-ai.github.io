@@ -7,17 +7,11 @@ permalink: /cv/
 <div class="cv-page">
     <div class="cv-header">
         <h1>Jennifer Andreoli-Fang, PhD</h1>
-        <p class="cv-subtitle">Builder of AI Systems, Technology Leader</p>
+        <p class="cv-subtitle">Software Engineer & AI Enthusiast</p>
     </div>
 
     <div class="cv-content">
-        {% assign cv_sections = site.cv | sort: 'order' %}
-        {% for section in cv_sections %}
-        <section class="cv-section">
-            <h2>{{ section.title }}</h2>
-            {{ section.content | markdownify }}
-        </section>
-        {% endfor %}
+        {% include cv-content.html %}
     </div>
 </div>
 

@@ -4,31 +4,7 @@ title: Projects
 permalink: /projects/
 ---
 
-<section class="projects-header">
-    <h1>Recent AI and GenAI Projects</h1>
-</section>
-
-<section class="projects-content">
-    <div class="projects-grid">
-        {% assign sorted_projects = site.projects | sort: 'order' %}
-        {% for project in sorted_projects %}
-        <div class="project-card">
-            <div class="project-image">
-                <img src="{{ project.image | default: '/assets/images/placeholder.jpg' }}" alt="{{ project.title }}">
-            </div>
-            <div class="project-content">
-                <h2>{{ project.title }}</h2>
-                <div class="project-tags">
-                    {% for tag in project.tags %}
-                    <span class="tag">{{ tag }}</span>
-                    {% endfor %}
-                </div>
-                {{ project.content | markdownify }}
-            </div>
-        </div>
-        {% endfor %}
-    </div>
-</section>
+{% include projects-content.html %}
 
 <style>
 .projects-header {
@@ -89,6 +65,12 @@ permalink: /projects/
     font-size: 1.5rem;
 }
 
+.project-content h3 {
+    color: var(--primary-color);
+    margin: 1rem 0 0.5rem 0;
+    font-size: 1.2rem;
+}
+
 .project-tags {
     margin-bottom: 1rem;
 }
@@ -102,6 +84,24 @@ permalink: /projects/
     font-size: 0.875rem;
     margin-right: 0.5rem;
     margin-bottom: 0.5rem;
+}
+
+.project-content ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.project-content li {
+    margin-bottom: 0.5rem;
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+.project-content li:before {
+    content: "•";
+    color: var(--secondary-color);
+    position: absolute;
+    left: 0;
 }
 
 @media (max-width: 768px) {
