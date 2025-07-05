@@ -7,7 +7,7 @@ permalink: /cv/
 <div class="cv-page">
     <div class="cv-header">
         <h1>Jennifer Andreoli-Fang, PhD</h1>
-        <p class="cv-subtitle">Software Engineer & AI Enthusiast</p>
+        <p class="cv-subtitle">CTO | Builder of AI Systems</p>
     </div>
 
     <div class="cv-content">

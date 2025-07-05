@@ -2,6 +2,11 @@
 
 This is a personal website built with Jekyll, designed to be hosted on GitHub Pages. The site features a clean, modern design and is fully responsive.
 
+Note: to test out on local server, run
+```
+bundle exec jekyll serve
+```
+
 ## Features
 
 - Modern, responsive design
