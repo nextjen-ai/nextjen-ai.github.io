@@ -33,14 +33,13 @@ permalink: /projects/
 
 .project-card {
     background: var(--white);
-    border-radius: 10px;
+    border-radius: 8px;
     overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    transition: border-color 0.3s ease;
 }
 
 .project-card:hover {
-    transform: translateY(-5px);
+    border: 1px solid var(--secondary-color);
 }
 
 .project-image {
