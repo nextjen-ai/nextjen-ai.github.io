@@ -70,21 +70,6 @@ body {
     color: var(--secondary-color);
 }
 
-/* Mobile Navigation */
-.mobile-menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    color: var(--primary-color);
-    font-size: 1.5rem;
-    cursor: pointer;
-    padding: 0.5rem;
-}
-
-.mobile-menu-toggle:hover {
-    color: var(--secondary-color);
-}
-
 /* Main Content */
 .site-content {
     padding: 4rem 0;
@@ -120,7 +105,7 @@ body {
     color: var(--secondary-color);
 }
 
-/* Mobile Navigation */
+/* Mobile Navigation - Hidden by default */
 .mobile-menu-toggle {
     display: none;
     background: none;
