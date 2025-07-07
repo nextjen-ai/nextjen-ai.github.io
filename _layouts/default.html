@@ -53,10 +53,14 @@
             const navLinks = document.getElementById('nav-links');
             const isActive = navLinks.classList.contains('active');
             
+            console.log('Toggle clicked, current state:', isActive);
+            
             if (isActive) {
                 navLinks.classList.remove('active');
+                console.log('Menu hidden');
             } else {
                 navLinks.classList.add('active');
+                console.log('Menu shown');
             }
         }
         
@@ -76,6 +80,14 @@
                 const navLinks = document.getElementById('nav-links');
                 navLinks.classList.remove('active');
             });
+        });
+        
+        // Debug: Check if elements exist
+        document.addEventListener('DOMContentLoaded', function() {
+            const navLinks = document.getElementById('nav-links');
+            const mobileToggle = document.querySelector('.mobile-menu-toggle');
+            console.log('Nav links element:', navLinks);
+            console.log('Mobile toggle element:', mobileToggle);
         });
     </script>
 </body>
