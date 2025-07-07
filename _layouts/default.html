@@ -13,7 +13,10 @@
         <div class="container">
             <nav class="main-nav">
                 <a href="{{ '/' | relative_url }}" class="logo">{{ site.title }}</a>
-                <ul class="nav-links">
+                <button class="mobile-menu-toggle" onclick="toggleMobileMenu()">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <ul class="nav-links" id="nav-links">
                     <li><a href="{{ '/bio' | relative_url }}">Bio</a></li>
                     <li><a href="{{ '/cv' | relative_url }}">CV</a></li>
                     <li><a href="{{ '/projects' | relative_url }}">Projects</a></li>
@@ -44,5 +47,22 @@
             </div>
         </div>
     </footer>
+    
+    <script>
+        function toggleMobileMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        }
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const navLinks = document.getElementById('nav-links');
+            const mobileToggle = document.querySelector('.mobile-menu-toggle');
+            
+            if (!navLinks.contains(event.target) && !mobileToggle.contains(event.target)) {
+                navLinks.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html> 
