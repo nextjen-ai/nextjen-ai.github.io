@@ -51,7 +51,13 @@
     <script>
         function toggleMobileMenu() {
             const navLinks = document.getElementById('nav-links');
-            navLinks.classList.toggle('active');
+            const isActive = navLinks.classList.contains('active');
+            
+            if (isActive) {
+                navLinks.classList.remove('active');
+            } else {
+                navLinks.classList.add('active');
+            }
         }
         
         // Close menu when clicking outside
@@ -62,6 +68,14 @@
             if (!navLinks.contains(event.target) && !mobileToggle.contains(event.target)) {
                 navLinks.classList.remove('active');
             }
+        });
+        
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', function() {
+                const navLinks = document.getElementById('nav-links');
+                navLinks.classList.remove('active');
+            });
         });
     </script>
 </body>
