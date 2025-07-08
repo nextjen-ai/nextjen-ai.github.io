@@ -9,8 +9,11 @@ social:
     url: https://linkedin.com/in/nextjen
     icon: fab fa-linkedin
   - name: Email
-    url: mailto:web@nextjen.ai
+    url: mailto:hi@nextjen.ai
     icon: fas fa-envelope
+  - name: Instagram
+    url: https://instagram.com/realnextjen
+    icon: fab fa-instagram
 
 navigation:
   - title: Bio

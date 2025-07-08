@@ -38,12 +38,11 @@
             <div class="footer-content">
                 <div class="social-links">
                     {% for social in site.data.site.social %}
-                    <a href="{{ social.url }}" {% if social.name == 'LinkedIn' %}target="_blank"{% endif %} title="{{ social.name }}">
+                    <a href="{{ social.url }}" target="_blank" title="{{ social.name }}">
                         <i class="{{ social.icon }}"></i>
                     </a>
                     {% endfor %}
                 </div>
-                <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }}. All rights reserved.</p>
             </div>
         </div>
     </footer>
