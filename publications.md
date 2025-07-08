@@ -20,7 +20,7 @@ permalink: /publications/
 .publications-content {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 4rem 2rem;
+    padding: 0rem 2rem;
 }
 
 .publications-grid {
@@ -33,11 +33,6 @@ permalink: /publications/
     background: var(--white);
     border-radius: 8px;
     overflow: hidden;
-    transition: border-color 0.3s ease;
-}
-
-.publication-card:hover {
-    border: 1px solid var(--secondary-color);
 }
 
 .publication-content {
@@ -63,19 +58,30 @@ permalink: /publications/
     padding-left: 0;
 }
 
-.publication-content li {
+.publication-content ul li {
     margin-bottom: 0.75rem;
     position: relative;
     padding-left: 1.5rem;
     line-height: 1.6;
 }
 
-.publication-content li:before {
+.publication-content ul li:before {
     content: "•";
     color: var(--secondary-color);
     position: absolute;
     left: 0;
     font-weight: bold;
+}
+
+.publication-content ol {
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+.publication-content ol li {
+    margin-bottom: 0.75rem;
+    line-height: 1.6;
+    padding-left: 0;
 }
 
 .publication-content a {

@@ -20,7 +20,7 @@ permalink: /projects/
 .projects-content {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 4rem 2rem;
+    padding: 0rem 2rem;
 }
 
 .projects-grid {
@@ -33,11 +33,6 @@ permalink: /projects/
     background: var(--white);
     border-radius: 8px;
     overflow: hidden;
-    transition: border-color 0.3s ease;
-}
-
-.project-card:hover {
-    border: 1px solid var(--secondary-color);
 }
 
 .project-image {

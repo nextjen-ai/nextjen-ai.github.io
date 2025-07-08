@@ -14,7 +14,7 @@ permalink: /bio/
         <section class="bio-section">
             <p>Dr. Jennifer Andreoli-Fang is a technology leader with over 20 years of experience in AI, telecommunications, and cloud computing. With a PhD in machine learning and networks and multiple DeepLearning.ai specializations, she combines academic expertise with practical industry experience.</p>
             
-            <p>Currently leading the global wireline networks segment at Amazon Web Services (AWS), she works with tier-1 operators on architecting broadband workload on AWS and go-to-market strategies. Her work focuses on driving innovation in broadband and cloud technologies and building AI solutions in the space. Prior to AWS, Jennifer was a Distinguished Technologist at CableLabs, the R&D arm of the global cable industry, where she led the development of DOCSIS technology. Jennifer is widely recognized for her influential work in cable broadband and at the 3GPP.</p>
+            <p>Currently leading the global wireline networks segment at Amazon Web Services (AWS), Dr. Andreoli-Fang works with tier-1 operators on architecting broadband workload on AWS and go-to-market strategies. Her work focuses on driving innovation in broadband and cloud technologies and building AI solutions in the space. Prior to AWS, she was a Distinguished Technologist at CableLabs, the R&D arm of the global cable industry, where she led the development of DOCSIS technology. She is widely recognized for her influential work in cable broadband and at the 3GPP.</p>
             
             <p>With over 110 patents issued and pending, Dr. Andreoli-Fang is recognized as the top female inventor in the cable industry. Her achievements have been celebrated with numerous awards, including the WICT Rocky Mountain Technology Woman award and the Light Reading's Hedy Lamarr Female Tech Pioneer award.</p>
             
@@ -54,8 +54,7 @@ permalink: /bio/
 }
 
 .bio-section p {
-    font-size: 1.1rem;
-    line-height: 1.8;
+    line-height: 1.7;
     color: var(--text-color);
 }
 
