@@ -8,14 +8,12 @@ permalink: /publications/
 
 <style>
 .publications-header {
-    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
-    color: var(--white);
     padding: 4rem 0;
     text-align: center;
 }
 
 .publications-header h1 {
-    color: var(--white);
+    color: var(--primary-color);
     margin: 0;
 }
 
