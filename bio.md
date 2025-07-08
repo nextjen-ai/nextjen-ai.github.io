@@ -29,12 +29,17 @@ permalink: /bio/
 .bio-page {
     max-width: 800px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: 1rem;
+    min-height: calc(100vh - 200px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-top: 2rem;
 }
 
 .bio-header {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
 }
 
 .bio-subtitle {

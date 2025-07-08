@@ -73,7 +73,6 @@ body {
 /* Main Content */
 .site-content {
     padding: 4rem 0;
-    min-height: calc(100vh - 200px);
 }
 
 /* Footer */
