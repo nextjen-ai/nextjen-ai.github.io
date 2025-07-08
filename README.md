@@ -2,18 +2,16 @@
 
 This is a personal website built with Jekyll, designed to be hosted on GitHub Pages. The site features a clean, modern design and is fully responsive.
 
-Note: to test out on local server, run
-```
-bundle exec jekyll serve
-```
-
 ## Features
 
-- Modern, responsive design
-- Clean and professional layout
-- Easy to maintain and update
-- SEO optimized
-- Fast loading times
+- Modern, responsive design with clean typography
+- Hero image with optimized sizing for desktop and mobile
+- Professional navigation with mobile menu
+- Social media integration (LinkedIn, Email, Instagram)
+- Multiple content pages (Bio, CV, Projects, Publications)
+- SEO optimized with proper meta tags
+- Fast loading times with optimized assets
+- Clean footer design inspired by modern personal sites
 
 ## Prerequisites
 
@@ -49,20 +47,67 @@ This site is configured to be deployed on GitHub Pages. Simply push your changes
 
 ```
 .
-├── _config.yml          # Jekyll configuration
-├── _layouts/           # Layout templates
-├── assets/            # Static assets (CSS, images)
-├── index.html         # Home page
-├── bio.html          # Biography page
-└── Gemfile           # Ruby dependencies
+├── _config.yml                  # Jekyll configuration
+├── _data/
+│   └── site.yml                 # Site data (social links, navigation)
+├── _includes/
+│   ├── cv-content.html          # CV page content
+│   ├── home-content.html        # Home page hero and content
+│   ├── projects-content.html    # Projects page content
+│   └── publications-content.html # Publications page content
+├── _layouts/
+│   ├── bio_section.html         # Bio section layout
+│   └── default.html             # Main site layout
+├── _site/                       # Generated site (gitignored)
+├── assets/
+│   ├── css/
+│   │   └── main.css             # Main stylesheet
+│   └── images/
+│       ├── placeholder.md       # Image placeholder
+│       └── profile.jpg          # Hero profile image
+├── bio.md                       # About page
+├── cv.md                        # CV page
+├── index.html                   # Home page
+├── projects.md                  # Projects page
+├── publications.md              # Publications page
+├── Gemfile                      # Ruby dependencies
+├── Gemfile.lock                 # Locked dependencies
+└── README.md                    # This file
 ```
+
+## Content Management
+
+### Pages
+- **Home** (`index.html`): Hero section with introduction and highlights
+- **Bio** (`bio.md`): About page with professional background
+- **CV** (`cv.md`): Detailed resume and experience
+- **Projects** (`projects.md`): Portfolio of work and projects
+- **Publications** (`publications.md`): Academic papers and presentations
+
+### Styling
+- **Main CSS** (`assets/css/main.css`): Global styles and responsive design
+- **Page-specific styles**: Inline styles in each page for custom layouts
+
+### Configuration
+- **Site Data** (`_data/site.yml`): Social links, navigation, and site metadata
+- **Jekyll Config** (`_config.yml`): Site-wide settings and plugins
 
 ## Customization
 
-- Edit `_config.yml` to update site-wide settings
-- Modify CSS in `assets/css/main.css`
-- Update content in the respective HTML files
-- Add new pages by creating new HTML files with the appropriate front matter
+- Edit `_data/site.yml` to update social links and navigation
+- Modify `assets/css/main.css` for global styling changes
+- Update page content in the respective `.md` and `.html` files
+- Add new pages by creating new files with appropriate front matter
+- Customize hero image by replacing `assets/images/profile.jpg`
+
+## Recent Updates
+
+- Optimized hero image sizing (70% on desktop, 100% on mobile)
+- Added social media links (LinkedIn, Email, Instagram)
+- Removed copyright footer for cleaner design
+- Fixed bio page spacing and layout
+- Updated publications to use numbered lists
+- Improved responsive design and mobile experience
 
 ## Contributing
 
