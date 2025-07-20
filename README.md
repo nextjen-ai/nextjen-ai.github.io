@@ -1,6 +1,6 @@
 # Jennifer Andréoli-Fang's Personal Website
 
-This is a personal website built with Jekyll, designed to be hosted on GitHub Pages. The site features a clean, modern design and is fully responsive.
+This is a personal website built with Jekyll, designed to be hosted on GitHub Pages. The site features a clean, modern design and is fully responsive. The site is accessible at both `nextjen.ai` (custom domain) and `nextjen-ai.github.io` (GitHub Pages domain).
 
 ## Features
 
@@ -9,9 +9,11 @@ This is a personal website built with Jekyll, designed to be hosted on GitHub Pa
 - Professional navigation with mobile menu
 - Social media integration (LinkedIn, Email, Instagram)
 - Multiple content pages (Bio, CV, Projects, Publications)
+- Hidden wedding page with custom pink theme (`/chapman-fang-wedding.html`)
 - SEO optimized with proper meta tags
 - Fast loading times with optimized assets
 - Clean footer design inspired by modern personal sites
+- Custom domain support via CNAME
 
 ## Prerequisites
 
@@ -48,6 +50,7 @@ This site is configured to be deployed on GitHub Pages. Simply push your changes
 ```
 .
 ├── _config.yml                  # Jekyll configuration
+├── CNAME                        # Custom domain configuration
 ├── _data/
 │   └── site.yml                 # Site data (social links, navigation)
 ├── _includes/
@@ -57,16 +60,20 @@ This site is configured to be deployed on GitHub Pages. Simply push your changes
 │   └── publications-content.html # Publications page content
 ├── _layouts/
 │   ├── bio_section.html         # Bio section layout
-│   └── default.html             # Main site layout
+│   ├── default.html             # Main site layout
+│   └── wedding.html             # Wedding page layout
 ├── _site/                       # Generated site (gitignored)
 ├── assets/
 │   ├── css/
-│   │   └── main.css             # Main stylesheet
+│   │   ├── main.css             # Main stylesheet
+│   │   └── wedding-theme.css    # Wedding page pink theme
 │   └── images/
 │       ├── placeholder.md       # Image placeholder
-│       └── profile.jpg          # Hero profile image
+│       ├── profile.jpg          # Hero profile image
+│       └── wedding.jpg          # Wedding hero image
 ├── bio.md                       # About page
 ├── cv.md                        # CV page
+├── chapman-fang-wedding.html    # Hidden wedding page
 ├── index.html                   # Home page
 ├── projects.md                  # Projects page
 ├── publications.md              # Publications page
@@ -83,14 +90,17 @@ This site is configured to be deployed on GitHub Pages. Simply push your changes
 - **CV** (`cv.md`): Detailed resume and experience
 - **Projects** (`projects.md`): Portfolio of work and projects
 - **Publications** (`publications.md`): Academic papers and presentations
+- **Wedding** (`chapman-fang-wedding.html`): Hidden wedding page with custom pink theme
 
 ### Styling
 - **Main CSS** (`assets/css/main.css`): Global styles and responsive design
+- **Wedding Theme CSS** (`assets/css/wedding-theme.css`): Pink theme for wedding page
 - **Page-specific styles**: Inline styles in each page for custom layouts
 
 ### Configuration
 - **Site Data** (`_data/site.yml`): Social links, navigation, and site metadata
 - **Jekyll Config** (`_config.yml`): Site-wide settings and plugins
+- **Custom Domain** (`CNAME`): Custom domain configuration for nextjen.ai
 
 ## Customization
 
@@ -102,6 +112,21 @@ This site is configured to be deployed on GitHub Pages. Simply push your changes
 
 ## Recent Updates
 
+### Wedding Page (August 2024)
+- Added hidden wedding page with custom pink theme (`/chapman-fang-wedding.html`)
+- Created dedicated wedding layout (`_layouts/wedding.html`)
+- Implemented pink wedding theme CSS (`assets/css/wedding-theme.css`)
+- Added wedding hero image (`assets/images/wedding.jpg`)
+- Included comprehensive wedding details: locations, agenda, guest list, local recommendations
+- Added Google Maps integration for all locations
+- Responsive design optimized for mobile and desktop
+
+### Domain Configuration (August 2024)
+- Added custom domain support via CNAME file
+- Site now accessible at both `nextjen.ai` and `nextjen-ai.github.io`
+- Configured GitHub Pages for custom domain
+
+### General Updates
 - Optimized hero image sizing (70% on desktop, 100% on mobile)
 - Added social media links (LinkedIn, Email, Instagram)
 - Removed copyright footer for cleaner design
