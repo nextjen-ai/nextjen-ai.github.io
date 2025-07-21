@@ -72,6 +72,10 @@ This site is configured to be deployed on GitHub Pages. Simply push your changes
 │       ├── profile.jpg          # Hero profile image
 │       ├── Santorini.jpg        # Wedding hero image
 │       └── Boulder.jpg          # Boulder background image
+├── favicon/
+│   ├── favicon.svg              # Main favicon (SVG format)
+│   ├── generate-favicons.html   # Tool to generate PNG/ICO versions
+│   └── README.md                # Detailed favicon documentation
 ├── bio.md                       # About page
 ├── cv.md                        # CV page
 ├── chapman-fang-wedding.html    # Hidden wedding page
@@ -113,7 +117,7 @@ This site is configured to be deployed on GitHub Pages. Simply push your changes
 
 ## Recent Updates
 
-### Wedding Page (August 2024)
+### Wedding Page (July 2025)
 - Added hidden wedding page with custom pink theme (`/chapman-fang-wedding.html`)
 - Created dedicated wedding layout (`_layouts/wedding.html`)
 - Implemented pink wedding theme CSS (`assets/css/wedding-theme.css`)
@@ -122,10 +126,17 @@ This site is configured to be deployed on GitHub Pages. Simply push your changes
 - Added Google Maps integration for all locations
 - Responsive design optimized for mobile and desktop
 
-### Domain Configuration (August 2024)
+### Domain Configuration (July 2025)
 - Added custom domain support via CNAME file
 - Site now accessible at both `nextjen.ai` and `nextjen-ai.github.io`
 - Configured GitHub Pages for custom domain
+
+### Favicon Implementation (July 2025)
+- Added custom "nextjen" favicon with brand colors
+- Implemented SVG favicon for modern browser support
+- Created organized favicon folder with documentation
+- Added favicon to both main site and wedding page layouts
+- See `favicon/README.md` for detailed technical documentation
 
 ### General Updates
 - Optimized hero image sizing (70% on desktop, 100% on mobile)
