@@ -70,7 +70,8 @@ This site is configured to be deployed on GitHub Pages. Simply push your changes
 │   └── images/
 │       ├── placeholder.md       # Image placeholder
 │       ├── profile.jpg          # Hero profile image
-│       └── wedding.jpg          # Wedding hero image
+│       ├── Santorini.jpg        # Wedding hero image
+│       └── Boulder.jpg          # Boulder background image
 ├── bio.md                       # About page
 ├── cv.md                        # CV page
 ├── chapman-fang-wedding.html    # Hidden wedding page
