@@ -303,7 +303,7 @@ body {
 
 /* Iconic Boulder Background */
 .iconic-boulder-bg {
-    background-image: url('../images/Boulder.jpg');
+    background-image: url('/assets/images/Boulder.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
