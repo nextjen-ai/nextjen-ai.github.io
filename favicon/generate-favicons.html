@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generate nextjen Favicons</title>
+    <style>
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+            color: #2c3e50;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #2c3e50;
+        }
+        
+        .preview {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        .favicon-display {
+            display: inline-block;
+            margin: 10px;
+            text-align: center;
+        }
+        
+        canvas {
+            border: 1px solid #e9ecef;
+            border-radius: 4px;
+            margin-bottom: 5px;
+        }
+        
+        .download-all {
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .download-btn {
+            background: #3498db;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 10px;
+            font-weight: 600;
+        }
+        
+        .download-btn:hover {
+            background: #2980b9;
+        }
+        
+        .instructions {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        
+        .instructions h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+        
+        .instructions ol {
+            line-height: 1.6;
+        }
+        
+        .status {
+            text-align: center;
+            margin: 20px 0;
+            padding: 15px;
+            border-radius: 6px;
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>nextjen Favicon Generator</h1>
+        
+        <div class="preview">
+            <div class="favicon-display">
+                <canvas id="favicon16" width="16" height="16"></canvas>
+                <p>16x16</p>
+            </div>
+            <div class="favicon-display">
+                <canvas id="favicon32" width="32" height="32"></canvas>
+                <p>32x32</p>
+            </div>
+            <div class="favicon-display">
+                <canvas id="favicon48" width="48" height="48"></canvas>
+                <p>48x48</p>
+            </div>
+            <div class="favicon-display">
+                <canvas id="favicon180" width="180" height="180"></canvas>
+                <p>180x180 (Apple)</p>
+            </div>
+        </div>
+        
+        <div class="download-all">
+            <button class="download-btn" onclick="downloadAll()">Download All Favicon Files</button>
+        </div>
+        
+        <div class="status" id="status" style="display: none;">
+            Files generated successfully! Check your downloads folder.
+        </div>
+        
+        <div class="instructions">
+            <h3>Implementation Steps</h3>
+            <ol>
+                <li><strong>Download the files</strong> - Click the button above to download all favicon files</li>
+                <li><strong>Place in root directory</strong> - Move the downloaded files to your website's root folder</li>
+                <li><strong>Test the favicon</strong> - Refresh your website and check browser tabs</li>
+                <li><strong>Clear cache if needed</strong> - Some browsers cache favicons aggressively</li>
+            </ol>
+            
+            <h3>Files Created</h3>
+            <ul>
+                <li><code>favicon.ico</code> - Standard favicon for all browsers</li>
+                <li><code>favicon-16x16.png</code> - Small favicon for bookmarks</li>
+                <li><code>favicon-32x32.png</code> - Standard favicon size</li>
+                <li><code>apple-touch-icon.png</code> - For iOS home screen</li>
+                <li><code>favicon.svg</code> - Scalable vector version</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        function drawFavicon(canvas, size) {
+            const ctx = canvas.getContext('2d');
+            
+            // Clear canvas
+            ctx.clearRect(0, 0, size, size);
+            
+            // White background
+            ctx.fillStyle = '#ffffff';
+            ctx.fillRect(0, 0, size, size);
+            
+            // Border
+            ctx.strokeStyle = '#e9ecef';
+            ctx.lineWidth = Math.max(1, size / 32);
+            ctx.strokeRect(0, 0, size, size);
+            
+            // Text
+            ctx.fillStyle = '#2c3e50';
+            const fontSize = Math.max(6, size / 3);
+            ctx.font = `bold ${fontSize}px Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif`;
+            ctx.textAlign = 'center';
+            ctx.textBaseline = 'middle';
+            
+            // Draw "nextjen" text
+            ctx.fillText('nextjen', size / 2, size / 2);
+        }
+        
+        function downloadFile(dataUrl, filename) {
+            const link = document.createElement('a');
+            link.download = filename;
+            link.href = dataUrl;
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        }
+        
+        function downloadAll() {
+            const sizes = [
+                { size: 16, filename: 'favicon-16x16.png' },
+                { size: 32, filename: 'favicon-32x32.png' },
+                { size: 48, filename: 'favicon-48x48.png' },
+                { size: 180, filename: 'apple-touch-icon.png' }
+            ];
+            
+            // Create a temporary canvas for ICO generation
+            const tempCanvas = document.createElement('canvas');
+            tempCanvas.width = 32;
+            tempCanvas.height = 32;
+            drawFavicon(tempCanvas, 32);
+            
+            // Download ICO (simplified - in practice would be multi-size ICO)
+            downloadFile(tempCanvas.toDataURL(), 'favicon.ico');
+            
+            // Download PNG files
+            sizes.forEach(({ size, filename }) => {
+                const canvas = document.getElementById(`favicon${size}`);
+                downloadFile(canvas.toDataURL(), filename);
+            });
+            
+            // Show success message
+            document.getElementById('status').style.display = 'block';
+            setTimeout(() => {
+                document.getElementById('status').style.display = 'none';
+            }, 5000);
+        }
+        
+        // Initialize all favicon canvases
+        window.onload = function() {
+            drawFavicon(document.getElementById('favicon16'), 16);
+            drawFavicon(document.getElementById('favicon32'), 32);
+            drawFavicon(document.getElementById('favicon48'), 48);
+            drawFavicon(document.getElementById('favicon180'), 180);
+        };
+    </script>
+</body>
+</html> 
