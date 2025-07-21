@@ -13,15 +13,15 @@ The website currently uses the SVG favicon (`favicon.svg`) which provides:
 - ✅ Scalable design that looks crisp at any size
 - ✅ Small file size
 - ✅ Modern browser support
-- ✅ "nextjen" branding in your brand colors
+- ✅ "next" and "jen" branding in a modern, two-line layout
 
 ## Design Details
 
 - **Background**: White (#ffffff)
 - **Text**: Dark blue (#2c3e50) 
 - **Border**: Light gray (#e9ecef)
-- **Font**: Inter (or system fallbacks)
-- **Text**: "nextjen"
+- **Font**: System sans-serif (e.g., -apple-system, Segoe UI, Roboto)
+- **Text**: "next" (top line), "jen" (bottom line), both lowercase and centered
 
 ## Browser Support
 
@@ -39,4 +39,4 @@ The favicon is implemented in `_layouts/default.html` with:
 <link rel="icon" type="image/svg+xml" href="{{ '/favicon/favicon.svg' | relative_url }}">
 ```
 
-This provides excellent browser support while maintaining the clean, professional "nextjen" branding. 
+This provides excellent browser support while maintaining the clean, professional "next / jen" branding in a modern, legible style. 
