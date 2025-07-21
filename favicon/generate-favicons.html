@@ -99,22 +99,8 @@
         <h1>JEN Favicon Generator</h1>
         
         <div class="preview">
-            <label for="fontSelect"><strong>Font Preview:</strong></label>
-            <select id="fontSelect" style="margin: 0 10px 10px 10px;">
-                <option value="Nunito, Quicksand, Avenir, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Nunito</option>
-                <option value="Quicksand, Nunito, Avenir, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Quicksand</option>
-                <option value="Avenir, Nunito, Quicksand, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Avenir</option>
-                <option value="Montserrat, Poppins, Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">Montserrat</option>
-                <option value="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif">System Sans-Serif</option>
-            </select>
-            <div id="fontPreviews">
-                <div style="font-family: 'Nunito', Quicksand, Avenir, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 18px; font-weight: 600; letter-spacing: 1px; color: #2c3e50;">next<br>jen (Nunito)</div>
-                <div style="font-family: 'Quicksand', Nunito, Avenir, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 18px; font-weight: 600; letter-spacing: 1px; color: #2c3e50;">next<br>jen (Quicksand)</div>
-                <div style="font-family: 'Avenir', Nunito, Quicksand, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 18px; font-weight: 600; letter-spacing: 1px; color: #2c3e50;">next<br>jen (Avenir)</div>
-                <div style="font-family: 'Montserrat', Poppins, Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 18px; font-weight: bold; letter-spacing: 1px; color: #2c3e50;">next<br>jen (Montserrat)</div>
-                <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 18px; font-weight: 600; letter-spacing: 1px; color: #2c3e50;">next<br>jen (System Sans-Serif)</div>
-            </div>
-            <small>You can preview 'JEN' in several modern fonts. The favicon below will use the selected font.</small>
+            <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 24px; font-weight: 700; letter-spacing: 1px; color: #fff; background: #3498db; display: inline-block; padding: 8px 24px; border-radius: 6px;">JEN</div>
+            <small>Preview of the favicon text in white on a blue background.</small>
             <div class="favicon-display">
                 <canvas id="favicon16" width="16" height="16"></canvas>
                 <p>16x16</p>
@@ -162,48 +148,27 @@
     </div>
 
     <script>
-        function drawFavicon(canvas, size, fontFamily) {
+        function drawFavicon(canvas, size) {
             const ctx = canvas.getContext('2d');
             ctx.clearRect(0, 0, size, size);
-            ctx.fillStyle = '#ffffff';
+            ctx.fillStyle = '#3498db';
             ctx.fillRect(0, 0, size, size);
             ctx.strokeStyle = '#e9ecef';
             ctx.lineWidth = Math.max(1, size / 32);
             ctx.strokeRect(0, 0, size, size);
-            ctx.fillStyle = '#2c3e50';
-            const fontSize = Math.max(6, size / 3.5); // Slightly smaller for two lines
-            ctx.font = `600 ${fontSize}px ${fontFamily}`;
+            ctx.fillStyle = '#fff';
+            const fontSize = Math.max(10, size * 0.55);
+            ctx.font = `700 ${fontSize}px -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif`;
             ctx.textAlign = 'center';
             ctx.textBaseline = 'middle';
-            const lines = ['next', 'jen'];
-            const letterSpacing = size / 16;
-            // Calculate vertical centering
-            const lineHeight = fontSize + 1.5; // Add a little extra spacing
-            const totalHeight = lineHeight * lines.length;
-            let y = size / 2 - totalHeight / 2 + lineHeight / 2;
-            lines.forEach(line => {
-                // Measure total width for letter spacing
-                let totalTextWidth = 0;
-                for (let i = 0; i < line.length; i++) {
-                    totalTextWidth += ctx.measureText(line[i]).width;
-                    if (i < line.length - 1) totalTextWidth += letterSpacing;
-                }
-                let x = size / 2 - totalTextWidth / 2;
-                for (let i = 0; i < line.length; i++) {
-                    ctx.fillText(line[i], x, y);
-                    x += ctx.measureText(line[i]).width + letterSpacing;
-                }
-                y += lineHeight;
-            });
+            ctx.fillText('JEN', size / 2, size / 2);
         }
         function updateFavicons() {
-            const fontFamily = document.getElementById('fontSelect').value;
-            drawFavicon(document.getElementById('favicon16'), 16, fontFamily);
-            drawFavicon(document.getElementById('favicon32'), 32, fontFamily);
-            drawFavicon(document.getElementById('favicon48'), 48, fontFamily);
-            drawFavicon(document.getElementById('favicon180'), 180, fontFamily);
+            drawFavicon(document.getElementById('favicon16'), 16);
+            drawFavicon(document.getElementById('favicon32'), 32);
+            drawFavicon(document.getElementById('favicon48'), 48);
+            drawFavicon(document.getElementById('favicon180'), 180);
         }
-        document.getElementById('fontSelect').addEventListener('change', updateFavicons);
         window.onload = function() {
             updateFavicons();
         };
@@ -229,7 +194,7 @@
             const tempCanvas = document.createElement('canvas');
             tempCanvas.width = 32;
             tempCanvas.height = 32;
-            drawFavicon(tempCanvas, 32, document.getElementById('fontSelect').value); // Use selected font for ICO
+            drawFavicon(tempCanvas, 32); // Use selected font for ICO
             
             // Download ICO (simplified - in practice would be multi-size ICO)
             downloadFile(tempCanvas.toDataURL(), 'favicon.ico');
@@ -237,7 +202,7 @@
             // Download PNG files
             sizes.forEach(({ size, filename }) => {
                 const canvas = document.getElementById(`favicon${size}`);
-                drawFavicon(canvas, size, document.getElementById('fontSelect').value); // Use selected font for PNGs
+                drawFavicon(canvas, size); // Use selected font for PNGs
                 downloadFile(canvas.toDataURL(), filename);
             });
             
