@@ -26,3 +26,5 @@ navigation:
     url: /publications/
   - title: AI Resources
     url: /ai-resources/ 
+  - title: Paintings
+    url: /paintings/ 

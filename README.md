@@ -57,6 +57,7 @@ This site is configured to be deployed on GitHub Pages. Simply push your changes
 │   ├── cv-content.html          # CV page content
 │   ├── home-content.html        # Home page hero and content
 │   ├── projects-content.html    # Projects page content
+│   ├── paintings-content.html   # Paintings gallery content
 │   └── publications-content.html # Publications page content
 ├── _layouts/
 │   ├── bio_section.html         # Bio section layout
@@ -71,7 +72,11 @@ This site is configured to be deployed on GitHub Pages. Simply push your changes
 │       ├── placeholder.md       # Image placeholder
 │       ├── profile.jpg          # Hero profile image
 │       ├── Santorini.jpg        # Wedding hero image
-│       └── Boulder.jpg          # Boulder background image
+│       ├── Boulder.jpg          # Boulder background image
+│       ├── acropolis.jpg        # Painting: Acropolis
+│       ├── flatirons.jpg        # Painting: Flatirons
+│       ├── bhutan.jpg           # Painting: Bhutan
+│       └── lake.jpg             # Painting: Lake (portrait)
 ├── favicon/
 │   ├── favicon.svg              # Main favicon (SVG format)
 │   ├── generate-favicons.html   # Tool to generate PNG/ICO versions
@@ -82,6 +87,7 @@ This site is configured to be deployed on GitHub Pages. Simply push your changes
 ├── index.html                   # Home page
 ├── projects.md                  # Projects page
 ├── publications.md              # Publications page
+├── paintings.md                 # Paintings gallery page
 ├── Gemfile                      # Ruby dependencies
 ├── Gemfile.lock                 # Locked dependencies
 └── README.md                    # This file
@@ -95,6 +101,7 @@ This site is configured to be deployed on GitHub Pages. Simply push your changes
 - **CV** (`cv.md`): Detailed resume and experience
 - **Projects** (`projects.md`): Portfolio of work and projects
 - **Publications** (`publications.md`): Academic papers and presentations
+- **Paintings** (`paintings.md`): Gallery of original oil paintings, with landscape and portrait images, and availability labels
 - **Wedding** (`chapman-fang-wedding.html`): Hidden wedding page with custom pink theme
 
 ### Styling
@@ -137,6 +144,13 @@ This site is configured to be deployed on GitHub Pages. Simply push your changes
 - Created organized favicon folder with documentation
 - Added favicon to both main site and wedding page layouts
 - See `favicon/README.md` for detailed technical documentation
+
+### Paintings Page (July 2025)
+- Added a new Paintings gallery page (`/paintings/`) showcasing original oil paintings
+- Features a responsive grid with both landscape and portrait images
+- Each painting displays title, medium, and availability (e.g., "SOLD", "available")
+- Lake painting is displayed in portrait orientation, others in landscape
+- Navigation menu updated to include "Paintings" as the rightmost option
 
 ### General Updates
 - Optimized hero image sizing (70% on desktop, 100% on mobile)

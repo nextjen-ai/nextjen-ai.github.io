@@ -1,0 +1,74 @@
+<section class="painting-header">
+    <h1>Paintings</h1>
+    <p>Selected original oil paintings</p>
+</section>
+
+<section class="painting-gallery">
+    <div class="gallery-grid">
+        <div class="gallery-item">
+            <img src="/assets/images/acropolis.jpg" alt="Acropolis at Night">
+            <div class="caption">Acropolis<br><span class="medium">Oil on panel, available</span></div>
+        </div>
+        <div class="gallery-item">
+            <img src="/assets/images/flatirons.jpg" alt="Flatirons">
+            <div class="caption">Flatirons<br><span class="medium">Oil on panel, SOLD</span></div>
+        </div>
+        <div class="gallery-item">
+            <img src="/assets/images/bhutan.jpg" alt="Bhutan Fields">
+            <div class="caption">Bhutan<br><span class="medium">Oil on panel, available</span></div>
+        </div>
+        <div class="gallery-item">
+            <img src="/assets/images/lake.jpg" alt="AlpineLake" class="portrait">
+            <div class="caption">Lake<br><span class="medium">Oil on panel, available</span></div>
+        </div>
+    </div>
+</section>
+
+<style>
+.painting-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.painting-gallery {
+    padding: 2rem 0;
+}
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+.gallery-item {
+    background: var(--white);
+    border-radius: 8px;
+    /* Removed box-shadow for flat look */
+    overflow: hidden;
+    text-align: center;
+    padding: 1rem;
+}
+.gallery-item img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 4px;
+    margin-bottom: 0.5rem;
+    aspect-ratio: 16/9;
+}
+.gallery-item img.portrait {
+    aspect-ratio: 3/4;
+    height: 320px;
+}
+.caption {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    margin-top: 0.5rem;
+    line-height: 1.3;
+}
+.medium {
+    display: block;
+    font-size: 1rem;
+    color: var(--secondary-color);
+    font-style: italic;
+    margin-top: 0.2rem;
+}
+</style> 
