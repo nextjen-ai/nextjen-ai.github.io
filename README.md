@@ -73,10 +73,12 @@ This site is configured to be deployed on GitHub Pages. Simply push your changes
 │       ├── profile.jpg          # Hero profile image
 │       ├── Santorini.jpg        # Wedding hero image
 │       ├── Boulder.jpg          # Boulder background image
-│       ├── acropolis.jpg        # Painting: Acropolis
-│       ├── flatirons.jpg        # Painting: Flatirons
-│       ├── bhutan.jpg           # Painting: Bhutan
-│       └── lake.jpg             # Painting: Lake (portrait)
+│       └── paintings/           # Painting images
+│           ├── acropolis.jpg    # Painting: Acropolis
+│           ├── flatirons.jpg    # Painting: Flatirons
+│           ├── bhutan.jpg       # Painting: Bhutan
+│           ├── lake.jpg         # Painting: Lake (portrait)
+│           └── barn.jpg         # Painting: Barn
 ├── favicon/
 │   ├── favicon.svg              # Main favicon (SVG format)
 │   ├── generate-favicons.html   # Tool to generate PNG/ICO versions

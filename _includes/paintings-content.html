@@ -6,20 +6,24 @@
 <section class="painting-gallery">
     <div class="gallery-grid">
         <div class="gallery-item">
-            <img src="/assets/images/acropolis.jpg" alt="Acropolis">
-            <div class="caption">Acropolis at Night<br><span class="medium">Oil on panel, available</span></div>
+            <img src="/assets/images/paintings/acropolis.jpg" alt="Acropolis">
+            <div class="caption">Acropolis at Night<br><span class="medium">Oil on panel, 5x7<p>AVAILABLE</p></span></div>
         </div>
         <div class="gallery-item">
-            <img src="/assets/images/flatirons.jpg" alt="Flatirons">
-            <div class="caption">Flatirons<br><span class="medium">Oil on panel, SOLD</span></div>
+            <img src="/assets/images/paintings/flatirons.jpg" alt="Flatirons">
+            <div class="caption">Flatirons<br><span class="medium">Oil on panel, 5x7<p>SOLD</p></span></div>
         </div>
         <div class="gallery-item">
-            <img src="/assets/images/bhutan.jpg" alt="Bhutan">
-            <div class="caption">Bhutan Fields<br><span class="medium">Oil on panel, available</span></div>
+            <img src="/assets/images/paintings/bhutan.jpg" alt="Bhutan">
+            <div class="caption">Bhutan Fields<br><span class="medium">Oil on panel, 6x8<p>AVAILABLE</p></span></div>
         </div>
         <div class="gallery-item">
-            <img src="/assets/images/lake.jpg" alt="Lake" class="portrait">
-            <div class="caption">Alpine Lake<br><span class="medium">Oil on panel, available</span></div>
+            <img src="/assets/images/paintings/lake.jpg" alt="Lake">
+            <div class="caption">Alpine Lake<br><span class="medium">Oil on panel, 8x6<p>AVAILABLE</p></span></div>
+        </div>
+        <div class="gallery-item">
+            <img src="/assets/images/paintings/barn.jpg" alt="Barn">
+            <div class="caption">Sunset on the Farm<br><span class="medium">Oil on panel, 9x12<p>AVAILABLE</p></span></div>
         </div>
     </div>
 </section>
@@ -47,16 +51,13 @@
 }
 .gallery-item img {
     width: 100%;
-    height: 160px;
+    height: auto;
     object-fit: cover;
     object-position: center;
     border-radius: 4px;
     margin-bottom: 0.5rem;
-    aspect-ratio: 4/3;
-}
-.gallery-item img.portrait {
-    aspect-ratio: 3/4;
-    height: 320px;
+    aspect-ratio: 1/1;
+    min-height: 200px;
 }
 .caption {
     font-size: 1.1rem;

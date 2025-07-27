@@ -72,7 +72,7 @@ body {
 
 /* Main Content */
 .site-content {
-    padding: 4rem 0;
+    padding: 2rem 0;
 }
 
 /* Footer */
@@ -180,7 +180,7 @@ body {
     }
     
     .site-content {
-        padding: 2rem 0;
+        padding: 1rem 0;
     }
     
     .site-footer {
