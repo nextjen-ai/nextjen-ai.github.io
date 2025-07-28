@@ -92,6 +92,15 @@ This site is configured to be deployed on GitHub Pages. Simply push your changes
 ├── paintings.md                 # Paintings gallery page
 ├── Gemfile                      # Ruby dependencies
 ├── Gemfile.lock                 # Locked dependencies
+├── .cursor/
+│   └── rules/                   # Cursor IDE rules for development
+│       ├── jekyll-website.mdc   # Main project guidelines
+│       ├── css-styling.mdc      # CSS and styling guidelines
+│       ├── content-management.mdc # Content and SEO guidelines
+│       ├── deployment.mdc       # GitHub Pages deployment guidelines
+│       ├── accessibility.mdc    # WCAG AA accessibility guidelines
+│       ├── seo-optimization.mdc # SEO and performance guidelines
+│       └── git-commit.mdc       # Git commit and documentation guidelines
 └── README.md                    # This file
 ```
 
@@ -116,6 +125,21 @@ This site is configured to be deployed on GitHub Pages. Simply push your changes
 - **Jekyll Config** (`_config.yml`): Site-wide settings and plugins
 - **Custom Domain** (`CNAME`): Custom domain configuration for nextjen.ai
 
+## Development Tools
+
+### Cursor IDE Rules
+This project includes comprehensive Cursor IDE rules (`.cursor/rules/`) to ensure consistent development practices:
+
+- **jekyll-website.mdc**: Main project guidelines and file structure
+- **css-styling.mdc**: Responsive design and accessibility standards
+- **content-management.mdc**: Content workflow and SEO optimization
+- **deployment.mdc**: GitHub Pages deployment and custom domain setup
+- **accessibility.mdc**: WCAG AA compliance guidelines
+- **seo-optimization.mdc**: Meta tags, structured data, and performance
+- **git-commit.mdc**: Conventional commit format and documentation updates
+
+These rules help maintain code quality, accessibility standards, and consistent development practices across the project.
+
 ## Customization
 
 - Edit `_data/site.yml` to update social links and navigation
@@ -125,6 +149,15 @@ This site is configured to be deployed on GitHub Pages. Simply push your changes
 - Customize hero image by replacing `assets/images/profile.jpg`
 
 ## Recent Updates
+
+### Development Tools (December 2024)
+- Added comprehensive Cursor IDE rules for consistent development practices
+- Implemented conventional commit format with automatic README update reminders
+- Added accessibility guidelines for WCAG AA compliance
+- Included SEO optimization guidelines for better search engine visibility
+- Created deployment guidelines for GitHub Pages and custom domain management
+- Added content management guidelines for consistent content workflow
+- Established CSS styling guidelines for responsive design and maintainability
 
 ### Wedding Page (July 2025)
 - Added hidden wedding page with custom pink theme (`/chapman-fang-wedding.html`)
