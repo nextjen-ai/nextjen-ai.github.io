@@ -1,0 +1,164 @@
+---
+description: "Deployment guidelines for Jekyll website with GitHub Pages and custom domain configuration"
+globs: ["_config.yml", "Gemfile", "CNAME", "**/*.md", "**/*.html"]
+alwaysApply: true
+---
+
+# Deployment Guidelines
+
+## GitHub Pages Deployment
+
+### Prerequisites
+- Ruby 2.7.0 or higher
+- Bundler installed
+- Git repository configured
+- GitHub Pages enabled for repository
+
+### Local Development Setup
+```bash
+# Install dependencies
+bundle install
+
+# Start local server
+bundle exec jekyll serve
+
+# Build for production
+bundle exec jekyll build
+```
+
+### Deployment Process
+
+#### Pre-Deployment Checklist
+1. **Test locally**: `bundle exec jekyll serve`
+2. **Validate HTML**: Check for syntax errors
+3. **Test responsive design**: Multiple screen sizes
+4. **Check all links**: Internal and external
+5. **Optimize images**: Compress and resize
+6. **Update dependencies**: `bundle update`
+
+#### Deployment Steps
+1. **Commit changes**: `git add . && git commit -m "Update description"`
+2. **Push to main branch**: `git push origin main`
+3. **Monitor deployment**: Check GitHub Actions/Pages settings
+4. **Verify live site**: Test on live domain
+
+### Configuration Files
+
+#### `_config.yml` Management
+- **Base URL**: Configure for GitHub Pages
+- **URL**: Set to custom domain
+- **Plugins**: Only use GitHub Pages compatible plugins
+- **Collections**: Configure as needed
+- **Exclude**: Don't process unnecessary files
+
+#### `CNAME` File
+- **Purpose**: Custom domain configuration
+- **Content**: Single line with domain name
+- **Maintenance**: Update only when changing domains
+
+#### `Gemfile` Dependencies
+- **Jekyll version**: Keep updated but stable
+- **Plugins**: Only essential plugins
+- **Platform-specific**: Include for cross-platform compatibility
+
+### Build Optimization
+
+#### Performance Considerations
+- **Image optimization**: Compress and resize
+- **CSS minification**: Minimize file sizes
+- **JavaScript**: Minimize if used
+- **Asset organization**: Logical file structure
+
+#### SEO Optimization
+- **Meta tags**: Include on all pages
+- **Sitemap**: Generate automatically
+- **Robots.txt**: Configure properly
+- **Canonical URLs**: Set correctly
+
+### Monitoring and Maintenance
+
+#### Post-Deployment Checks
+1. **Site accessibility**: Test all pages load
+2. **Custom domain**: Verify DNS propagation
+3. **SSL certificate**: Ensure HTTPS works
+4. **Mobile responsiveness**: Test on devices
+5. **Page speed**: Monitor loading times
+
+#### Regular Maintenance
+- **Update Jekyll**: Keep current with security patches
+- **Update gems**: Regular dependency updates
+- **Check broken links**: Monthly link validation
+- **Monitor analytics**: Track site performance
+- **Backup content**: Regular content backups
+
+### Troubleshooting
+
+#### Common Issues
+- **Build failures**: Check Jekyll version compatibility
+- **Missing assets**: Verify file paths and references
+- **Custom domain issues**: Check DNS configuration
+- **Plugin conflicts**: Use only GitHub Pages compatible plugins
+
+#### Debug Process
+1. **Check build logs**: GitHub Actions or local build
+2. **Validate configuration**: `_config.yml` syntax
+3. **Test locally**: Reproduce issues locally
+4. **Check file permissions**: Ensure proper access
+5. **Verify dependencies**: Bundle install and update
+
+### Security Considerations
+
+#### Repository Security
+- **No sensitive data**: Don't commit personal information
+- **Environment variables**: Use for API keys if needed
+- **Access control**: Limit repository access
+- **Regular audits**: Review for exposed secrets
+
+#### Site Security
+- **HTTPS enforcement**: Always use secure connections
+- **Content Security Policy**: Implement if needed
+- **External links**: Validate regularly
+- **Form security**: Implement if adding forms
+
+### Performance Monitoring
+
+#### Key Metrics
+- **Page load time**: Target under 3 seconds
+- **Mobile performance**: Optimize for mobile
+- **Core Web Vitals**: Monitor LCP, FID, CLS
+- **SEO score**: Regular SEO audits
+
+#### Optimization Strategies
+- **Image optimization**: WebP format, proper sizing
+- **CSS optimization**: Minimize and combine
+- **Caching**: Leverage browser caching
+- **CDN**: Consider for global performance
+
+### Backup and Recovery
+
+#### Backup Strategy
+- **Content backup**: Regular content exports
+- **Configuration backup**: Save `_config.yml`
+- **Asset backup**: Backup images and files
+- **Version control**: Use Git for history
+
+#### Recovery Process
+1. **Restore from Git**: Clone fresh repository
+2. **Restore content**: Copy from backups
+3. **Update configuration**: Restore settings
+4. **Test locally**: Verify functionality
+5. **Deploy**: Push changes to GitHub
+
+### Custom Domain Management
+
+#### DNS Configuration
+- **A records**: Point to GitHub Pages IPs
+- **CNAME**: Configure for www subdomain
+- **Propagation time**: Allow 24-48 hours
+- **SSL certificate**: Automatic with GitHub Pages
+
+#### Domain Maintenance
+- **Renewal reminders**: Track domain expiration
+- **DNS monitoring**: Regular DNS health checks
+- **SSL monitoring**: Ensure certificates are valid
+- **Redirects**: Configure if changing domains

@@ -1,0 +1,116 @@
+---
+description: "CSS styling guidelines for Jekyll website with responsive design and accessibility standards"
+globs: ["**/*.css", "**/*.html", "_layouts/**/*.html", "_includes/**/*.html"]
+alwaysApply: true
+---
+
+# CSS Styling Guidelines
+
+## Project CSS Architecture
+
+### File Organization
+- `assets/css/main.css`: Primary stylesheet for main site
+- `assets/css/wedding-theme.css`: Special theme for wedding page
+- Keep styles modular and organized by component
+
+### Naming Conventions
+- Use kebab-case for class names (`hero-section`, `nav-link`)
+- Use BEM methodology for complex components
+- Prefix utility classes with `u-` (e.g., `u-hidden`, `u-text-center`)
+- Use semantic class names that describe purpose, not appearance
+
+### CSS Structure Guidelines
+
+#### Layout Classes
+```css
+/* Use semantic layout classes */
+.container, .wrapper, .section
+.header, .nav, .main, .footer
+.grid, .flex, .card
+```
+
+#### Component Classes
+```css
+/* Component-specific styling */
+.hero, .profile, .gallery
+.button, .link, .image
+.navigation, .menu, .dropdown
+```
+
+#### Utility Classes
+```css
+/* Utility classes for common patterns */
+.text-center, .text-left, .text-right
+.hidden, .visible, .sr-only
+.mt-1, .mb-2, .p-3 (spacing utilities)
+```
+
+### Responsive Design Principles
+- Mobile-first approach
+- Use CSS Grid and Flexbox for layouts
+- Implement breakpoints consistently
+- Test across all device sizes
+
+### CSS Custom Properties
+```css
+/* Define theme variables */
+:root {
+  --primary-color: #333;
+  --secondary-color: #666;
+  --accent-color: #007bff;
+  --font-family: 'Arial', sans-serif;
+  --spacing-unit: 1rem;
+}
+```
+
+### Performance Guidelines
+- Minimize CSS specificity conflicts
+- Use efficient selectors
+- Avoid deep nesting (max 3 levels)
+- Group related styles together
+- Use shorthand properties where appropriate
+
+### Accessibility Standards
+- Ensure sufficient color contrast (WCAG AA)
+- Use focus states for interactive elements
+- Provide alternative text for decorative images
+- Support high contrast mode
+- Test with screen readers
+
+### Browser Compatibility
+- Support modern browsers (last 2 versions)
+- Use vendor prefixes where necessary
+- Test on Chrome, Firefox, Safari, Edge
+- Graceful degradation for older browsers
+
+### CSS Organization
+```css
+/* 1. Reset/Normalize */
+/* 2. Base styles (body, typography) */
+/* 3. Layout components */
+/* 4. Navigation */
+/* 5. Content components */
+/* 6. Forms and interactive elements */
+/* 7. Utilities */
+/* 8. Print styles */
+```
+
+### Theme System
+- Maintain consistent color palette
+- Use CSS custom properties for theming
+- Support light/dark mode if needed
+- Keep wedding theme separate and modular
+
+### Code Quality
+- Use consistent indentation (2 spaces)
+- Add comments for complex selectors
+- Group related properties together
+- Use meaningful property order
+- Validate CSS with linters
+
+### Optimization
+- Minimize unused CSS
+- Combine similar selectors
+- Use efficient selectors (avoid universal selectors)
+- Optimize for critical rendering path
+- Consider CSS-in-JS for complex components

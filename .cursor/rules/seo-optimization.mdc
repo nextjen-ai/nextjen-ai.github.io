@@ -1,0 +1,261 @@
+---
+description: "SEO optimization guidelines for Jekyll website with meta tags, structured data, and performance optimization"
+globs: ["**/*.html", "**/*.md", "_config.yml", "_layouts/**/*.html", "_includes/**/*.html"]
+alwaysApply: true
+---
+
+# SEO Optimization Guidelines
+
+## Technical SEO
+
+### Meta Tags and Headers
+```html
+<!-- Essential meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Professional description of the page">
+<meta name="keywords" content="relevant, keywords, for, the, page">
+<meta name="author" content="Jennifer Andréoli-Fang">
+
+<!-- Open Graph tags for social sharing -->
+<meta property="og:title" content="Page Title">
+<meta property="og:description" content="Page description">
+<meta property="og:image" content="https://nextjen.ai/assets/images/og-image.jpg">
+<meta property="og:url" content="https://nextjen.ai/page-url">
+<meta property="og:type" content="website">
+
+<!-- Twitter Card tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Page Title">
+<meta name="twitter:description" content="Page description">
+<meta name="twitter:image" content="https://nextjen.ai/assets/images/twitter-image.jpg">
+```
+
+### Page Structure
+```html
+<!-- Proper heading hierarchy -->
+<h1>Main page title (only one per page)</h1>
+<h2>Section heading</h2>
+<h3>Subsection heading</h3>
+
+<!-- Semantic HTML structure -->
+<header>
+<nav>
+<main>
+<section>
+<article>
+<aside>
+<footer>
+```
+
+### URL Structure
+- **Clean URLs**: Use descriptive, keyword-rich URLs
+- **Consistent structure**: Follow logical hierarchy
+- **Avoid parameters**: Use clean URLs without query strings
+- **Canonical URLs**: Prevent duplicate content issues
+
+## Content Optimization
+
+### Title Tags
+```html
+<!-- Optimize title tags -->
+<title>Primary Keyword | Secondary Keyword | Site Name</title>
+
+<!-- Examples -->
+<title>Jennifer Andréoli-Fang | AI & Machine Learning Expert</title>
+<title>Research Publications | Jennifer Andréoli-Fang</title>
+<title>Professional Projects | AI Technology Leader</title>
+```
+
+### Meta Descriptions
+```html
+<!-- Compelling meta descriptions (150-160 characters) -->
+<meta name="description" content="Technology leader specializing in AI, machine learning, and cloud solutions. View research publications, projects, and professional experience.">
+```
+
+### Content Strategy
+
+#### Keyword Research
+- **Primary keywords**: AI, machine learning, technology leadership
+- **Secondary keywords**: Research, publications, projects, expertise
+- **Long-tail keywords**: Specific topics and areas of expertise
+- **Local keywords**: Geographic terms if relevant
+
+#### Content Optimization
+- **Keyword density**: Natural integration, avoid stuffing
+- **Header optimization**: Include keywords in H1, H2, H3 tags
+- **Image optimization**: Descriptive filenames and alt text
+- **Internal linking**: Connect related content
+- **Content freshness**: Regular updates and new content
+
+## Technical Implementation
+
+### Jekyll SEO Configuration
+```yaml
+# _config.yml SEO settings
+title: "Jennifer Andréoli-Fang, PhD"
+description: "Technology leader specializing in AI, machine learning, and cloud solutions"
+url: "https://nextjen.ai"
+author: "Jennifer Andréoli-Fang"
+
+# SEO plugin configuration
+jekyll-seo-tag:
+  image: "/assets/images/profile.jpg"
+  image_alt: "Jennifer Andréoli-Fang professional headshot"
+  twitter:
+    username: "@nextjen_ai"
+```
+
+### Sitemap Generation
+```yaml
+# Automatic sitemap with Jekyll
+plugins:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+```
+
+### Robots.txt
+```txt
+# robots.txt for search engines
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://nextjen.ai/sitemap.xml
+```
+
+## Performance SEO
+
+### Page Speed Optimization
+- **Image optimization**: Compress and resize images
+- **CSS/JS minification**: Minimize file sizes
+- **Caching**: Implement browser caching
+- **CDN**: Use content delivery network
+- **Lazy loading**: Implement for images
+
+### Core Web Vitals
+- **LCP (Largest Contentful Paint)**: Target < 2.5 seconds
+- **FID (First Input Delay)**: Target < 100 milliseconds
+- **CLS (Cumulative Layout Shift)**: Target < 0.1
+
+### Mobile Optimization
+- **Responsive design**: Mobile-first approach
+- **Touch targets**: Minimum 44px × 44px
+- **Readable text**: Adequate font sizes
+- **Fast loading**: Optimize for mobile networks
+
+## Local SEO (if applicable)
+
+### Local Business Optimization
+- **Google My Business**: Claim and optimize listing
+- **Local citations**: Consistent NAP (Name, Address, Phone)
+- **Local keywords**: Include geographic terms
+- **Reviews**: Encourage and respond to reviews
+
+## Analytics and Monitoring
+
+### Google Analytics Setup
+```html
+<!-- Google Analytics tracking -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'GA_MEASUREMENT_ID');
+</script>
+```
+
+### Search Console
+- **Submit sitemap**: Register with Google Search Console
+- **Monitor performance**: Track search rankings
+- **Fix issues**: Address crawl errors and warnings
+- **Test tools**: Use Google's testing tools
+
+## Content Marketing SEO
+
+### Blog/Content Strategy
+- **Regular content**: Publish new content regularly
+- **Topic clusters**: Create content around main topics
+- **Internal linking**: Connect related content
+- **External linking**: Link to authoritative sources
+
+### Social Media Integration
+- **Social sharing**: Optimize for social platforms
+- **Open Graph**: Proper social media previews
+- **Twitter Cards**: Optimize for Twitter sharing
+- **Social signals**: Encourage social engagement
+
+## Technical SEO Audits
+
+### Regular Audits
+- **Site crawl**: Check for broken links and pages
+- **Index status**: Monitor indexed pages
+- **Page speed**: Regular performance testing
+- **Mobile usability**: Test mobile experience
+- **Security**: Ensure HTTPS and security headers
+
+### SEO Tools
+- **Google PageSpeed Insights**: Performance testing
+- **Google Search Console**: Search performance
+- **Screaming Frog**: Technical SEO audits
+- **Ahrefs/SEMrush**: Keyword research and tracking
+
+## Schema Markup
+
+### Structured Data
+```html
+<!-- Person schema for personal website -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Jennifer Andréoli-Fang",
+  "jobTitle": "Technology Leader",
+  "description": "Technology leader specializing in AI, machine learning, and cloud solutions",
+  "url": "https://nextjen.ai",
+  "sameAs": [
+    "https://linkedin.com/in/jennifer-andreoli-fang",
+    "https://github.com/nextjen-ai"
+  ]
+}
+</script>
+```
+
+### Article Schema
+```html
+<!-- Article schema for blog posts -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Article Title",
+  "author": {
+    "@type": "Person",
+    "name": "Jennifer Andréoli-Fang"
+  },
+  "datePublished": "2023-01-01",
+  "dateModified": "2023-01-01"
+}
+</script>
+```
+
+## SEO Best Practices
+
+### Content Quality
+- **Original content**: Create unique, valuable content
+- **User intent**: Match content to search intent
+- **Comprehensive coverage**: Cover topics thoroughly
+- **Regular updates**: Keep content current and relevant
+
+### Technical Excellence
+- **Clean code**: Well-structured HTML
+- **Fast loading**: Optimize for speed
+- **Mobile-friendly**: Responsive design
+- **Secure**: HTTPS and security best practices
+
+### User Experience
+- **Easy navigation**: Clear site structure
+- **Readable content**: Good typography and spacing
+- **Fast access**: Quick loading times
+- **Mobile optimization**: Great mobile experience

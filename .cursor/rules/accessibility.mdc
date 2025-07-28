@@ -1,0 +1,238 @@
+---
+description: "Accessibility guidelines for WCAG AA compliance with semantic HTML and screen reader support"
+globs: ["**/*.html", "**/*.md", "_layouts/**/*.html", "_includes/**/*.html", "**/*.css"]
+alwaysApply: true
+---
+
+# Accessibility Guidelines
+
+## WCAG Compliance Standards
+
+### Level AA Compliance Target
+- **Perceivable**: Content must be perceivable to all users
+- **Operable**: Interface must be operable by all users
+- **Understandable**: Content must be understandable
+- **Robust**: Content must be robust and compatible
+
+## Semantic HTML Structure
+
+### Document Structure
+```html
+<!-- Use proper heading hierarchy -->
+<h1>Main page title</h1>
+<h2>Section heading</h2>
+<h3>Subsection heading</h3>
+
+<!-- Use semantic elements -->
+<header>, <nav>, <main>, <section>, <article>, <aside>, <footer>
+```
+
+### Navigation Accessibility
+```html
+<!-- Primary navigation -->
+<nav role="navigation" aria-label="Main navigation">
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/bio">About</a></li>
+  </ul>
+</nav>
+
+<!-- Skip links for keyboard users -->
+<a href="#main-content" class="skip-link">Skip to main content</a>
+```
+
+## Color and Contrast
+
+### Color Contrast Requirements
+- **Normal text**: Minimum 4.5:1 contrast ratio
+- **Large text**: Minimum 3:1 contrast ratio
+- **UI components**: Minimum 3:1 contrast ratio
+- **Focus indicators**: High contrast visible
+
+### Color Independence
+- **Don't rely on color alone**: Use icons, patterns, or text
+- **Test in grayscale**: Ensure information is still conveyed
+- **Provide alternatives**: Text descriptions for color-coded information
+
+## Typography and Text
+
+### Font Accessibility
+- **Readable fonts**: Sans-serif fonts preferred
+- **Adequate size**: Minimum 16px for body text
+- **Line spacing**: 1.5x line height minimum
+- **Character spacing**: Sufficient letter spacing
+
+### Text Alternatives
+```html
+<!-- Alt text for images -->
+<img src="profile.jpg" alt="Jennifer Andréoli-Fang professional headshot">
+
+<!-- Descriptive link text -->
+<a href="/publications">View my research publications</a>
+
+<!-- Skip decorative images -->
+<img src="decoration.jpg" alt="" role="presentation">
+```
+
+## Keyboard Navigation
+
+### Focus Management
+```css
+/* Visible focus indicators */
+:focus {
+  outline: 2px solid #007bff;
+  outline-offset: 2px;
+}
+
+/* Skip link styling */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 6px;
+  z-index: 1000;
+}
+
+.skip-link:focus {
+  top: 6px;
+}
+```
+
+### Tab Order
+- **Logical tab order**: Follow document structure
+- **Skip links**: Provide shortcuts to main content
+- **Focus traps**: Avoid trapping users in components
+- **Keyboard shortcuts**: Provide alternative navigation
+
+## Screen Reader Support
+
+### ARIA Labels and Roles
+```html
+<!-- Landmark roles -->
+<header role="banner">
+<nav role="navigation">
+<main role="main">
+<footer role="contentinfo">
+
+<!-- Descriptive labels -->
+<button aria-label="Close navigation menu">×</button>
+<section aria-labelledby="publications-heading">
+  <h2 id="publications-heading">Publications</h2>
+</section>
+```
+
+### Content Structure
+- **Headings**: Use proper heading hierarchy (H1 → H6)
+- **Lists**: Use semantic list elements (`<ul>`, `<ol>`, `<dl>`)
+- **Tables**: Include headers and captions
+- **Forms**: Include labels and fieldset groups
+
+## Images and Media
+
+### Image Accessibility
+```html
+<!-- Informative images -->
+<img src="research-diagram.jpg" 
+     alt="Flowchart showing machine learning pipeline with data preprocessing, model training, and evaluation stages">
+
+<!-- Decorative images -->
+<img src="background-pattern.jpg" alt="" role="presentation">
+
+<!-- Complex images -->
+<img src="complex-chart.jpg" alt="Bar chart showing quarterly sales data">
+<figcaption>Figure 1: Quarterly sales performance 2023</figcaption>
+```
+
+### Media Accessibility
+- **Video content**: Provide captions and transcripts
+- **Audio content**: Provide transcripts
+- **Interactive media**: Ensure keyboard accessibility
+- **Auto-playing content**: Provide pause/stop controls
+
+## Forms and Interactive Elements
+
+### Form Accessibility
+```html
+<!-- Proper form structure -->
+<form>
+  <fieldset>
+    <legend>Contact Information</legend>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  </fieldset>
+</form>
+```
+
+### Interactive Elements
+- **Buttons**: Use semantic button elements
+- **Links**: Provide descriptive text
+- **Custom controls**: Include ARIA attributes
+- **Error handling**: Provide clear error messages
+
+## Responsive Design Accessibility
+
+### Mobile Accessibility
+- **Touch targets**: Minimum 44px × 44px
+- **Spacing**: Adequate spacing between interactive elements
+- **Zoom support**: Allow zoom up to 200%
+- **Orientation**: Support both portrait and landscape
+
+### Responsive Navigation
+```css
+/* Mobile menu accessibility */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  transition: left 0.3s ease;
+}
+
+.mobile-menu.active {
+  left: 0;
+}
+
+/* Focus management for mobile menu */
+.mobile-menu:focus-within {
+  left: 0;
+}
+```
+
+## Testing and Validation
+
+### Manual Testing
+- **Keyboard navigation**: Test with Tab, Shift+Tab, Enter, Space
+- **Screen reader testing**: Test with NVDA, JAWS, or VoiceOver
+- **Color contrast**: Use tools like WebAIM Contrast Checker
+- **Zoom testing**: Test at 200% zoom level
+
+### Automated Testing
+- **Lighthouse**: Run accessibility audits
+- **axe-core**: Automated accessibility testing
+- **HTML validation**: Check for semantic errors
+- **CSS validation**: Ensure proper styling
+
+### Testing Checklist
+- [ ] All images have appropriate alt text
+- [ ] Color contrast meets WCAG AA standards
+- [ ] Keyboard navigation works properly
+- [ ] Focus indicators are visible
+- [ ] Screen reader compatibility verified
+- [ ] Mobile accessibility tested
+- [ ] Forms are properly labeled
+- [ ] Error messages are clear and helpful
+
+## Performance and Accessibility
+
+### Loading Performance
+- **Progressive enhancement**: Core functionality works without JavaScript
+- **Graceful degradation**: Site works with limited capabilities
+- **Loading indicators**: Provide feedback during loading
+- **Error handling**: Clear error messages and recovery options
+
+### Content Accessibility
+- **Plain language**: Use clear, simple language
+- **Reading level**: Aim for 8th grade reading level
+- **Abbreviations**: Define abbreviations on first use
+- **Technical terms**: Provide explanations for complex concepts

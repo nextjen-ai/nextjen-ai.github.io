@@ -1,0 +1,121 @@
+---
+description: "Jekyll website development guidelines for personal site with GitHub Pages deployment"
+globs: ["**/*.md", "**/*.html", "_config.yml", "Gemfile", "**/*.css"]
+alwaysApply: true
+---
+
+# Jekyll Website Development Rules
+
+## Project Overview
+This is a personal website built with Jekyll, designed to be hosted on GitHub Pages. The site features a clean, modern design and is fully responsive.
+
+## Technology Stack
+- **Static Site Generator**: Jekyll 4.3.2
+- **Markdown Processor**: Kramdown
+- **CSS**: Custom CSS with responsive design
+- **Deployment**: GitHub Pages
+- **Domain**: Custom domain (nextjen.ai) with CNAME configuration
+
+## File Structure Guidelines
+
+### Core Jekyll Files
+- `_config.yml`: Main Jekyll configuration - modify with care
+- `Gemfile`: Ruby dependencies - only add necessary gems
+- `CNAME`: Custom domain configuration - don't modify unless changing domains
+
+### Content Organization
+- **Markdown files** (`.md`): Main content pages (bio.md, cv.md, projects.md, etc.)
+- **HTML files**: Special pages (index.html, chapman-fang-wedding.html)
+- **`_layouts/`**: Template layouts (default.html, wedding.html)
+- **`_includes/`**: Reusable content components
+- **`_data/`**: Site data and configuration
+- **`assets/`**: Static assets (CSS, images)
+
+### Asset Management
+- **CSS**: Keep in `assets/css/` with descriptive names
+- **Images**: Organize in `assets/images/` with subdirectories for categories
+- **Favicon**: Use SVG format in `favicon/` directory
+
+## Development Guidelines
+
+### Content Creation
+1. **New pages**: Create as `.md` files with proper front matter
+2. **Layouts**: Use existing layouts or create new ones in `_layouts/`
+3. **Includes**: Extract reusable content to `_includes/` files
+4. **Images**: Optimize images before adding to `assets/images/`
+
+### CSS Guidelines
+- Use semantic class names
+- Maintain responsive design principles
+- Keep styles organized and commented
+- Use CSS custom properties for consistent theming
+
+### HTML/Markdown Standards
+- Use semantic HTML elements
+- Include proper meta tags for SEO
+- Maintain consistent indentation (2 spaces)
+- Use descriptive alt text for images
+
+### Jekyll-Specific Rules
+- **Front matter**: Always include layout and title
+- **Collections**: Use for organized content (publications, etc.)
+- **Data files**: Store site-wide data in `_data/`
+- **Permalinks**: Configure in `_config.yml` for clean URLs
+
+## Code Quality Standards
+
+### HTML
+- Validate HTML structure
+- Use semantic elements (`<header>`, `<nav>`, `<main>`, `<footer>`)
+- Ensure accessibility with proper ARIA labels
+- Optimize for mobile-first responsive design
+
+### CSS
+- Use consistent naming conventions
+- Organize styles logically (layout, typography, components)
+- Minimize specificity conflicts
+- Include vendor prefixes where necessary
+
+### Markdown
+- Use proper heading hierarchy (H1 → H6)
+- Include descriptive link text
+- Use code blocks with language specification
+- Maintain consistent formatting
+
+## Performance Guidelines
+- Optimize images for web (compress, appropriate formats)
+- Minimize CSS and JavaScript
+- Use lazy loading for images where appropriate
+- Ensure fast loading times for GitHub Pages
+
+## SEO Best Practices
+- Include proper meta descriptions
+- Use semantic HTML structure
+- Optimize page titles and headings
+- Include structured data where appropriate
+- Ensure proper canonical URLs
+
+## Testing and Validation
+- Test locally with `bundle exec jekyll serve`
+- Validate HTML structure
+- Test responsive design across devices
+- Check accessibility compliance
+- Verify all links work correctly
+
+## Deployment Considerations
+- All changes should work with GitHub Pages
+- Test build process locally before pushing
+- Ensure all assets are properly referenced
+- Verify custom domain configuration
+
+## Security Guidelines
+- Don't include sensitive information in public repository
+- Use HTTPS for all external links
+- Validate user inputs if adding forms
+- Keep dependencies updated
+
+## Maintenance
+- Regularly update Jekyll and gem dependencies
+- Monitor for broken links
+- Update content regularly
+- Backup important content and configurations

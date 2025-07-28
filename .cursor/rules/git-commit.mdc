@@ -1,0 +1,226 @@
+---
+description: "Git commit guidelines for Jekyll website with README.md updates for significant changes"
+globs: ["**/*", ".gitignore", "README.md"]
+alwaysApply: true
+---
+
+# Git Commit Guidelines
+
+## Commit Message Standards
+
+### Conventional Commit Format
+```bash
+# Format: type(scope): description
+# Examples:
+feat(content): add new publications page
+fix(css): resolve mobile navigation overlap
+docs(readme): update deployment instructions
+style(css): improve button hover states
+refactor(layouts): simplify default template
+test(accessibility): add keyboard navigation tests
+chore(deps): update Jekyll to 4.3.2
+```
+
+### Commit Types
+- **feat**: New features or significant functionality
+- **fix**: Bug fixes and error corrections
+- **docs**: Documentation changes (README, comments)
+- **style**: Code style changes (formatting, whitespace)
+- **refactor**: Code restructuring without functional changes
+- **test**: Adding or updating tests
+- **chore**: Maintenance tasks (dependencies, config)
+
+### Scope Examples
+- **content**: Pages, posts, images, data files
+- **css**: Stylesheets and styling changes
+- **layouts**: Template files and includes
+- **config**: Jekyll configuration files
+- **deps**: Dependencies and gems
+- **deploy**: Deployment-related changes
+
+## Significant Changes Requiring README Updates
+
+### Content Changes
+- **New pages**: bio.md, cv.md, projects.md, publications.md, paintings.md
+- **New sections**: Major content additions or reorganizations
+- **New features**: Interactive elements, forms, galleries
+- **Navigation changes**: Menu structure or link updates
+
+### Technical Changes
+- **New dependencies**: Added gems or external libraries
+- **Configuration changes**: _config.yml modifications
+- **Build process**: Changes to deployment or build steps
+- **Performance**: Significant optimization changes
+- **Security**: Security-related updates
+
+### Documentation Updates
+- **Project structure**: New directories or file organization
+- **Setup instructions**: Changes to installation or development process
+- **Deployment**: Updates to deployment procedures
+- **Features**: New functionality that users should know about
+
+## README.md Update Guidelines
+
+### When to Update README
+- **New pages added**: Update project structure section
+- **New features**: Add to features list
+- **Dependencies changed**: Update prerequisites or setup instructions
+- **Deployment changes**: Update deployment section
+- **Configuration changes**: Update relevant configuration sections
+
+### README Update Format
+```markdown
+## Recent Updates
+
+### [Date] - [Brief Description]
+- Added new publications page with filtering
+- Updated Jekyll to version 4.3.2
+- Improved mobile navigation accessibility
+- Added SEO optimization for all pages
+```
+
+### README Sections to Maintain
+- **Project overview**: Keep current and accurate
+- **Features list**: Add new features as they're implemented
+- **Prerequisites**: Update when dependencies change
+- **Installation**: Keep setup instructions current
+- **Project structure**: Reflect actual file organization
+- **Deployment**: Update when deployment process changes
+
+## Commit Workflow
+
+### Pre-Commit Checklist
+1. **Test locally**: `bundle exec jekyll serve`
+2. **Check responsive design**: Test on multiple screen sizes
+3. **Validate links**: Ensure all internal and external links work
+4. **Review changes**: Check for sensitive information
+5. **Update README**: If changes are significant
+
+### Commit Process
+```bash
+# Stage changes
+git add .
+
+# Check what's being committed
+git status
+
+# Create descriptive commit message
+git commit -m "feat(content): add new publications page with filtering
+
+- Add publications.md with year-based filtering
+- Include DOI links and abstracts
+- Update navigation to include publications
+- Add SEO meta tags for publications page
+
+Closes #123"
+```
+
+### Multi-Line Commit Messages
+```bash
+git commit -m "feat(css): implement dark mode theme
+
+- Add CSS custom properties for theme switching
+- Create dark mode color palette
+- Add theme toggle button to navigation
+- Update accessibility for high contrast mode
+
+Breaking changes: Some color variables renamed
+Closes #456"
+```
+
+## Branch Naming Conventions
+
+### Feature Branches
+```bash
+# Format: feature/description
+git checkout -b feature/publications-page
+git checkout -b feature/dark-mode
+git checkout -b feature/mobile-navigation
+```
+
+### Bug Fix Branches
+```bash
+# Format: fix/description
+git checkout -b fix/navigation-overlap
+git checkout -b fix/mobile-layout
+git checkout -b fix/accessibility-issues
+```
+
+### Documentation Branches
+```bash
+# Format: docs/description
+git checkout -b docs/update-readme
+git checkout -b docs/add-deployment-guide
+git checkout -b docs/update-setup-instructions
+```
+
+## Pull Request Guidelines
+
+### PR Description Template
+```markdown
+## Description
+Brief description of changes made.
+
+## Type of Change
+- [ ] Bug fix
+- [ ] New feature
+- [ ] Documentation update
+- [ ] Performance improvement
+- [ ] Accessibility improvement
+
+## Testing
+- [ ] Tested locally with `bundle exec jekyll serve`
+- [ ] Checked responsive design
+- [ ] Validated all links
+- [ ] Tested accessibility features
+
+## README Updates
+- [ ] Updated README.md (if significant changes)
+- [ ] Updated project structure section
+- [ ] Updated features list
+- [ ] Updated deployment instructions
+
+## Breaking Changes
+- [ ] No breaking changes
+- [ ] Breaking changes documented in README
+```
+
+## Version Control Best Practices
+
+### File Organization
+- **Keep commits atomic**: One logical change per commit
+- **Use meaningful messages**: Describe what and why, not how
+- **Reference issues**: Include issue numbers when applicable
+- **Avoid large commits**: Break up large changes into smaller commits
+
+### Sensitive Information
+- **Never commit**: API keys, passwords, personal data
+- **Use .gitignore**: Keep sensitive files out of repository
+- **Check before commit**: Review staged files for sensitive data
+- **Environment variables**: Use for any configuration that shouldn't be public
+
+### Backup and Recovery
+- **Regular commits**: Don't let changes accumulate
+- **Push frequently**: Keep remote repository updated
+- **Use branches**: Work on features in separate branches
+- **Tag releases**: Use git tags for major versions
+
+## Automated Checks
+
+### Pre-Commit Hooks
+```bash
+# Check for sensitive information
+git diff --cached | grep -i "password\|api_key\|secret"
+
+# Validate HTML structure
+bundle exec jekyll build --dry-run
+
+# Check for broken links (if link checker installed)
+bundle exec htmlproofer _site
+```
+
+### Post-Commit Actions
+- **Update README**: If significant changes were made
+- **Test deployment**: Verify changes work on live site
+- **Update documentation**: Keep project docs current
+- **Notify stakeholders**: If changes affect others

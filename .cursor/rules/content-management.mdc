@@ -1,0 +1,152 @@
+---
+description: "Content management guidelines for Jekyll website with SEO optimization and accessibility standards"
+globs: ["**/*.md", "**/*.html", "_data/**/*.yml", "_includes/**/*.html"]
+alwaysApply: true
+---
+
+# Content Management Guidelines
+
+## Content Structure
+
+### Page Types
+- **Main pages**: bio.md, cv.md, projects.md, publications.md, paintings.md
+- **Special pages**: index.html (home), chapman-fang-wedding.html (wedding)
+- **Data pages**: Use `_data/site.yml` for site-wide content
+
+### Front Matter Standards
+```yaml
+---
+layout: default
+title: "Page Title"
+description: "SEO description"
+permalink: /custom-url/
+---
+```
+
+### Content Organization
+
+#### Markdown Files
+- Use `.md` extension for content pages
+- Include proper front matter
+- Use consistent heading hierarchy
+- Include meta descriptions for SEO
+
+#### HTML Files
+- Use for special pages requiring custom layouts
+- Include proper semantic structure
+- Maintain accessibility standards
+- Use includes for reusable content
+
+### Content Guidelines
+
+#### Writing Style
+- Use clear, professional language
+- Maintain consistent tone across pages
+- Include proper alt text for images
+- Use descriptive link text
+
+#### SEO Optimization
+- Include meta descriptions
+- Use proper heading structure (H1 → H6)
+- Optimize page titles
+- Include relevant keywords naturally
+
+#### Image Management
+- Store images in `assets/images/`
+- Use descriptive filenames
+- Optimize images for web
+- Include alt text for accessibility
+- Organize by category (paintings/, etc.)
+
+### Content Updates
+
+#### Adding New Pages
+1. Create `.md` file with proper front matter
+2. Add to navigation if needed
+3. Update site data if required
+4. Test locally before deployment
+
+#### Updating Existing Content
+- Maintain consistent formatting
+- Update meta descriptions when content changes
+- Check all links after updates
+- Test responsive design
+
+### Data Management
+
+#### Site Data (`_data/site.yml`)
+- Store navigation links
+- Manage social media URLs
+- Configure site-wide settings
+- Keep contact information current
+
+#### Collections
+- Use for organized content (publications, projects)
+- Configure in `_config.yml`
+- Maintain consistent structure
+- Use appropriate layouts
+
+### Content Workflow
+
+#### Local Development
+1. Create/edit content locally
+2. Test with `bundle exec jekyll serve`
+3. Validate HTML and links
+4. Check responsive design
+5. Commit and push changes
+
+#### Content Review
+- Proofread all content
+- Check for broken links
+- Validate HTML structure
+- Test on multiple devices
+- Verify SEO elements
+
+### Special Content Types
+
+#### Publications
+- Use consistent citation format
+- Include DOIs when available
+- Organize by year/type
+- Include abstracts when appropriate
+
+#### Projects
+- Include project descriptions
+- Add relevant links
+- Include technologies used
+- Show project outcomes
+
+#### Paintings/Gallery
+- Use high-quality images
+- Include descriptive captions
+- Organize by theme/style
+- Optimize for web display
+
+### Content Maintenance
+
+#### Regular Tasks
+- Update bio and CV information
+- Add new publications
+- Update project status
+- Refresh images as needed
+- Check for broken links
+
+#### Quality Assurance
+- Validate all content locally
+- Test across browsers
+- Check mobile responsiveness
+- Verify accessibility compliance
+- Monitor site performance
+
+### Content Security
+- Don't include personal contact details in public content
+- Use relative URLs for internal links
+- Validate external links regularly
+- Keep sensitive information private
+
+### Performance Considerations
+- Optimize images for web
+- Minimize content bloat
+- Use efficient markup
+- Consider lazy loading for galleries
+- Monitor page load times
