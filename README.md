@@ -89,6 +89,7 @@ This site is configured to be deployed on GitHub Pages. Simply push your changes
 ├── index.html                   # Home page
 ├── projects.md                  # Projects page
 ├── publications.md              # Publications page
+├── life-list.md                 # Personal bucket list (hidden from navigation)
 ├── paintings.md                 # Paintings gallery page
 ├── Gemfile                      # Ruby dependencies
 ├── Gemfile.lock                 # Locked dependencies
@@ -112,6 +113,7 @@ This site is configured to be deployed on GitHub Pages. Simply push your changes
 - **CV** (`cv.md`): Detailed resume and experience
 - **Projects** (`projects.md`): Portfolio of work and projects
 - **Publications** (`publications.md`): Academic papers and presentations
+- **Life List** (`life-list.md`): Personal bucket list of goals and achievements (hidden from navigation)
 - **Paintings** (`paintings.md`): Gallery of original oil paintings, with landscape and portrait images, and availability labels
 - **Wedding** (`chapman-fang-wedding.html`): Hidden wedding page with custom pink theme
 
@@ -158,6 +160,13 @@ These rules help maintain code quality, accessibility standards, and consistent 
 - Created deployment guidelines for GitHub Pages and custom domain management
 - Added content management guidelines for consistent content workflow
 - Established CSS styling guidelines for responsive design and maintainability
+
+### Life List Page (December 2024)
+- Added personal bucket list page with goals and achievements
+- Implemented clean checkmark style for completed items
+- Created auto-numbered list for easy rearrangement
+- Hidden from main navigation for privacy while remaining accessible via direct URL
+- Added invitation for visitor recommendations and suggestions
 
 ### Wedding Page (July 2025)
 - Added hidden wedding page with custom pink theme (`/chapman-fang-wedding.html`)
