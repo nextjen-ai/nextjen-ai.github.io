@@ -12,15 +12,15 @@ permalink: /bio/
 
     <div class="bio-content">
         <section class="bio-section">
-            <p>Dr. Jennifer Andreoli-Fang is a technology leader with over 20 years of experience in AI, telecommunications, and cloud computing. With a PhD in machine learning and networks and multiple DeepLearning.ai specializations, she combines academic expertise with practical industry experience.</p>
+            <p>Dr. Jennifer Chapman, formerly Andreoli-Fang, is a technology leader with over 20 years of experience in AI, telecommunications, and cloud computing. With a PhD in machine learning and networks and multiple DeepLearning.ai specializations, she combines academic expertise with practical industry experience.</p>
             
-            <p>Currently leading the global wireline networks segment at Amazon Web Services (AWS), Dr. Andreoli-Fang works with tier-1 operators on architecting broadband workload on AWS and go-to-market strategies. Her work focuses on driving innovation in broadband and cloud technologies and building AI solutions in the space. Prior to AWS, she was a Distinguished Technologist at CableLabs, the R&D arm of the global cable industry, where she led the development of DOCSIS technology. She is widely recognized for her influential work in cable broadband and at the 3GPP.</p>
+            <p>Currently leading the global wireline networks segment at Amazon Web Services (AWS), Dr. Chapman works with tier-1 operators on architecting broadband workload on AWS and go-to-market strategies. Her work focuses on driving innovation in broadband and cloud technologies and building AI solutions in the space. Prior to AWS, she was a Distinguished Technologist at CableLabs, the R&D arm of the global cable industry, where she led the development of DOCSIS technology. She is widely recognized for her influential work in cable broadband and at the 3GPP.</p>
             
-            <p>With over 110 patents issued and pending, Dr. Andreoli-Fang is recognized as the top female inventor in the cable industry. Her achievements have been celebrated with numerous awards, including the WICT Rocky Mountain Technology Woman award and the Light Reading's Hedy Lamarr Female Tech Pioneer award.</p>
+            <p>With over 110 patents issued and pending, Dr. Chapman is recognized as the top female inventor in the cable industry. Her achievements have been celebrated with numerous awards, including the WICT Rocky Mountain Technology Woman award and the Light Reading's Hedy Lamarr Female Tech Pioneer award.</p>
             
             <p>She actively contributes to industry development through her roles in the SCTE Expo Program Committee, the SCTE AI/ML Working Group as Vice Chair, and the Board of Directors at WICT Rocky Mountain.</p>
             
-            <p>Dr. Andreoli-Fang earned her PhD in Electrical and Computer Engineering from the University of California, San Diego, and her Bachelor of Science degree from the California Institute of Technology.</p>
+            <p>Dr. Chapman earned her PhD in Electrical and Computer Engineering from the University of California, San Diego, and her Bachelor of Science degree from the California Institute of Technology.</p>
         </section>
     </div>
 </div>
