@@ -1,4 +1,4 @@
-# Jennifer Andréoli-Fang's Personal Website
+# Jennifer Chapman's Personal Website
 
 This is a personal website built with Jekyll, designed to be hosted on GitHub Pages. The site features a clean, modern design and is fully responsive. The site is accessible at both `nextjen.ai` (custom domain) and `nextjen-ai.github.io` (GitHub Pages domain).
 
@@ -151,6 +151,13 @@ These rules help maintain code quality, accessibility standards, and consistent 
 - Customize hero image by replacing `assets/images/profile.jpg`
 
 ## Recent Updates
+
+### Name Change Update (December 2024)
+- Updated all content to reflect name change from Andreoli-Fang to Chapman
+- Maintained SEO optimization by including both names in key content areas
+- Updated meta descriptions, alt text, and page descriptions
+- Enhanced content with "Dr. Jennifer Chapman (formerly Andreoli-Fang)" for search visibility
+- Updated README and project documentation
 
 ### Footer Styling (August 2025)
 - Updated footer background to match main content area (white background)
