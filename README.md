@@ -152,7 +152,7 @@ These rules help maintain code quality, accessibility standards, and consistent 
 
 ## Recent Updates
 
-### Name Change Update (December 2024)
+### Name Change Update (September 2025)
 - Updated all content to reflect name change from Andreoli-Fang to Chapman
 - Maintained SEO optimization by including both names in key content areas
 - Updated meta descriptions, alt text, and page descriptions
