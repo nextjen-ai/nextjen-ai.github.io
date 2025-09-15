@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Paintings
-description: Oil Paintings Gallery by Jennifer Chapman
+description: Oil Paintings Gallery by Jennifer Chapman (Andreoli-Fang)
 permalink: /paintings/
 ---
 
