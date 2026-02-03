@@ -12,7 +12,7 @@ permalink: /bio/
 
     <div class="bio-content">
         <section class="bio-section">
-            <p>Dr. Jennifer Chapman, formerly Andreoli-Fang, is a technology leader with over 20 years of experience in AI, telecommunications, and cloud computing. With a PhD in networks and machine learning and multiple DeepLearning.ai specializations, she combines academic expertise with practical industry experience.</p>
+            <p>Dr. Jennifer Chapman, formerly Andreoli-Fang, is a technology leader with over 20 years of experience in AI, cloud, and telecom. With a PhD in networks and machine learning and multiple DeepLearning.ai specializations, she combines academic expertise with practical industry experience.</p>
             
             <p>Dr. Chapman is currently Vice President of AI Technology and Architecture at Colt Technology Services, where she leads her team to develop AI and ML solutions for Colt's global connectivitity networks. She is building Colt's AI Practice in Boulder, Colorado.</p>
             
@@ -24,7 +24,7 @@ permalink: /bio/
             
             <p>She actively contributed to industry development through her roles in the SCTE Expo Program Committee, the SCTE AI/ML Working Group as Vice Chair, and the Board of Directors at WICT Rocky Mountain.</p>
             
-            <p>Dr. Chapman earned her PhD in Electrical and Computer Engineering from the University of California, San Diego, and her Bachelor of Science degree from the California Institute of Technology.</p>
+            <p>Dr. Chapman received her PhD in Electrical and Computer Engineering from the University of California, San Diego, and her Bachelor of Science degree from the California Institute of Technology.</p>
         </section>
     </div>
 </div>
