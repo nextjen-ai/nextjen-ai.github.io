@@ -152,6 +152,9 @@ These rules help maintain code quality, accessibility standards, and consistent 
 
 ## Recent Updates
 
+### Job Update (February 2026)
+- Updated main, bio, cv pages to reflect new job at Colt
+
 ### Name Change Update (September 2025)
 - Updated all content to reflect name change from Andreoli-Fang to Chapman
 - Maintained SEO optimization by including both names in key content areas
