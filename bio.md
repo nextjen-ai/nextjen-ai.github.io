@@ -12,11 +12,11 @@ permalink: /bio/
 
     <div class="bio-content">
         <section class="bio-section">
-            <p>Dr. Jennifer Chapman, formerly Andreoli-Fang, is a technology leader with over 20 years of experience in AI, cloud, and telecom. With a PhD in networks and machine learning and multiple DeepLearning.ai specializations, she combines academic expertise with practical industry experience.</p>
+            <p>Dr. Jennifer Chapman, formerly Andreoli-Fang, is a technology leader with over 20 years of experience in AI, cloud, and telecom. With a PhD in networks and machine learning, she combines academic expertise with practical industry experience.</p>
             
-            <p>Dr. Chapman is currently Vice President of AI Technology and Architecture at Colt Technology Services, where she leads her team to develop AI and ML solutions for Colt's global connectivitity networks. She is building Colt's AI Practice in Boulder, Colorado.</p>
+            <p>Dr. Chapman is currently Vice President of AI Technology and Architecture at Colt Technology Services, where she leads her team to develop AI and ML solutions leveraging Colt's global connectivitity networks. She is building Colt's AI Practice in Boulder, Colorado.</p>
             
-            <p>Prior to Colt, Dr. Chapman led the global wireline networks segment at Amazon Web Services (AWS). She worked with tier-1 operators on architecting broadband workload on AWS and go-to-market strategies. Her work focuses on driving innovation in broadband and cloud technologies and building AI solutions in the space. Prior to AWS, Dr. Chapman was a Distinguished Technologist at CableLabs, the R&D arm of the global cable industry, where she led the development of DOCSIS technology. She is widely recognized for her influential work in cable broadband and at the 3GPP.</p>
+            <p>Prior to Colt, Dr. Chapman led the global wireline networks segment at Amazon Web Services (AWS). Her work focused on driving innovation in broadband with cloud and AI solutions in the space. Prior to AWS, Dr. Chapman was a Distinguished Technologist at CableLabs, the R&D arm of the global cable industry, where she led the development of DOCSIS technology. She is widely recognized for her influential work in cable broadband and at the 3GPP.</p>
             
             <p>Dr. Chapman serves as a technical advisor for dotCargo Corporation, a logistics startup, and Virtues AI, a fintech startup. She advises them on all things AI.</p>
 
